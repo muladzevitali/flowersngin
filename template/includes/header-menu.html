@@ -1,0 +1,37 @@
+{% load static %}
+
+<div class="container --full-container">
+    <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="center-nav">
+        <a class="scroll-down js-scroll-to" href="#het-verhaal">scroll</a>
+        <a class="logo" href="/" aria-label="Flowers N Gin"><img src="{% static 'images/logo.png' %}" alt=""></a>
+    </div>
+
+    <div class="header-shopping-cart">
+        <a class="cart-link" href="{% url 'cart-index' %}" aria-live="assertive" aria-atomic="true">
+            <span class="cart-total">1</span>
+        </a>
+    </div>
+
+    <nav class="header-nav">
+        <ul class="lang-switcher">
+            <li class="active"><a href="#" lang="nl" hreflang="nl">nl</a></li>
+            <li><a href="#" lang="fr" hreflang="fr">fr</a></li>
+        </ul>
+
+        <ul class="main-menu">
+            <li><a href="/#het-verhaal" class="js-scroll-to">het verhaal</a></li>
+            <li><a href="/#reviews" class="js-scroll-to">reviews</a></li>
+            <li><a href="/#recepten" class="js-scroll-to">recepten</a></li>
+            <li><a href="/#contact" class="js-scroll-to">contact</a></li>
+            <li><a class="active" href="{% url 'store-index' %}">webshop</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="menu-overlay" class="overlay"></div>

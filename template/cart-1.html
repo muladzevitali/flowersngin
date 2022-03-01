@@ -1,0 +1,145 @@
+
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Winkelwagen</title>
+	<!--font, css, js -->
+	{% include 'includes/header.html' %}
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header id="header-menu">
+            {% include 'includes/header-menu.html' %}
+		</header>
+
+		<main>
+			<!-- //NOTE use class="--step-1" , "--step-2", "--step-3" in depends from current checkout progress -->
+			<section class="shopping-cart-section --step-1">
+				<div class="container">
+					<ul class="shopping-cart-progress">
+						<li>winkelwagen</li>
+						<li>gegevens</li>
+						<li>bevestiging</li>
+					</ul>
+					<div class="section-title">
+						<h1 class="like-h3">Overzicht van uw bestelling</h1>
+					</div>
+					<form method="" action="" class="step1">
+
+						<div class="step1__top">
+							<div class="cart-list">
+
+								<div class="cart-list__item --title">
+									<div class="col-items">Artikel</div>
+									<div class="col-subtotal">Subtotaal</div>
+									<div class="col-quantity">Aantal</div>
+									<div class="col-price">Prijs</div>
+								</div>
+
+								<div class="cart-list__item">
+									<div class="col-items">
+										<span class="title hide-desktop">Artikel</span>
+										<img src="/static/images/Summer Gift Box 1.jpg" alt="">
+										<div>FlowersNGin Summer gift box</div>
+									</div>
+									<div class="col-subtotal">
+										<span class="title hide-desktop">Subtotaal</span>
+										<div class="price">€ 62,50</div>
+									</div>
+									<div class="col-amount">
+										<span class="title hide-desktop">Aantal</span>
+										<div class="js-like-number like-number">
+											<div class="like-number__m" data-minval="0"></div>
+											<input type="text" name="amount" value="1">
+											<div class="like-number__p"></div>
+										</div>
+									</div>
+									<div class="col-price">
+										<span class="title hide-desktop">Prijs</span>
+										<div class="price">€ 62,50</div>
+									</div>
+								</div>
+
+								<div class="cart-list__item">
+									<div class="col-items">
+										<span class="title hide-desktop">Artikel</span>
+										<img src="/static/images/Flowers N Gin Summer.jpg" alt="">
+										<div>FlowersNGin Summer Edition</div>
+									</div>
+									<div class="col-subtotal">
+										<span class="title hide-desktop">Subtotaal</span>
+										<div class="price">€ 47,50</div>
+									</div>
+									<div class="col-amount">
+										<span class="title hide-desktop">Aantal</span>
+										<div class="js-like-number like-number">
+											<div class="like-number__m" data-minval="0"></div>
+											<input type="text" name="amount" value="1">
+											<div class="like-number__p"></div>
+										</div>
+									</div>
+									<div class="col-price">
+										<span class="title hide-desktop">Prijs</span>
+										<div class="price">€ 47,50</div>
+									</div>
+								</div>
+
+								<div class="cart-list__item">
+									<div class="col-items">
+										<span class="title hide-desktop">Artikel</span>
+										<img src="/static/images/Flowers N Gin Winter.jpg" alt="">
+										<div>FlowersNGin Winter Edition</div>
+									</div>
+									<div class="col-subtotal">
+										<span class="title hide-desktop">Subtotaal</span>
+										<div class="price">€ 47,50</div>
+									</div>
+									<div class="col-amount">
+										<span class="title hide-desktop">Aantal</span>
+										<div class="js-like-number like-number">
+											<div class="like-number__m" data-minval="0"></div>
+											<input type="text" name="amount" value="1">
+											<div class="like-number__p"></div>
+										</div>
+									</div>
+									<div class="col-price">
+										<span class="title hide-desktop">Prijs</span>
+										<div class="price">€ 47,50</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="cart-totaal">
+								<div class="cart-totaal__item">
+									<div class="name">Verzendkosten</div>
+									<div class="price">€ 5,95</div>
+								</div>
+								<div class="cart-totaal__item">
+									<div class="name">Totaal incl. 21% BTW</div>
+									<div class="price">€ 163,45</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="step1__footer">
+							<a href="#" class="btn --black">Terug naar de shop</a>
+							<button type="submit" class="btn --black">Verder met bestelling</button>
+						</div>
+
+					</form>
+				</div>
+			</section>
+
+		</main>
+
+		<footer id="footer-page">
+			{% include 'includes/footer.html' %}
+		</footer>
+
+	</div>
+</body>
+</html>

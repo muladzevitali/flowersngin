@@ -1,0 +1,42 @@
+{% load static %}
+
+<div class="footer-top">
+    <picture>
+        <source srcset="{% static 'images/footer-img-mobile.jpg' %}" media="(max-width: 700px)">
+        <img src="{% static 'images/footer-img.jpg' %}" alt="">
+    </picture>
+    <div class="contact-info">
+        <div>
+            <h6>E-mailadres</h6>
+            <a href="mailto:info@flowersngin.be">info@flowersngin.be</a>
+        </div>
+        <div>
+            <h6>Telefoonnummer</h6>
+            <a href="tel:003236856368">+32 (0)3 685 63 68</a>
+        </div>
+        <div>
+            <h6>Adres</h6>
+            <address>Wijnegemsesteenweg 17 <br>2970 ’s Gravenwezel</address>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class="container">
+        <div class="left">
+            <a href="https://www.natuurlijkbloemen.be/" aria-label="natuurlijkbloemen" target="_blank"
+               rel="noopener noreferrer">
+                <img src="{% static 'images/Logo Natuurlijk.svg' %}" alt="">
+            </a>
+        </div>
+        <div class="center">
+            <p>© 2019 Natuurlijk Bloembinders. Alle rechten voorbehouden. <a href="#">Privacy policy</a> | <a href="#">Cookies</a>
+            </p>
+            <div class="adbuddy">Website met <img src="{% static 'images/heart-solid.svg' %}" alt=""> gemaakt
+                door <a
+                        href="https://adbuddy.be" target="_blank" rel="noopener noreferrer">Adbuddy</a></div>
+        </div>
+        <div class="right">
+            <img src="{% static 'images/druppel.png' %}" alt="">
+        </div>
+    </div>
+</div>

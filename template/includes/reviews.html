@@ -1,0 +1,24 @@
+{% load static %}
+{% load iter_range %}
+
+<div class="section-title --center container">
+    <h2>Reacties van de mensen</h2>
+</div>
+<div class="reviews-slider js-reviews-slider">
+    {% for review in reviews %}
+        <div class="reviews__single">
+            <div class="stars">
+                {% for index in 0|iter_range:review.stars %}
+                    <div class="yellow"></div>
+                {% endfor %}
+
+            </div>
+            <div class="desc">
+                {{ review.text|safe }}
+            </div>
+            <h4>{{ review.name }}</h4>
+        </div>
+
+    {% endfor %}
+
+</div>

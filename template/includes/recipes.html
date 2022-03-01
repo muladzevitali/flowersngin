@@ -1,0 +1,122 @@
+{% load static %}
+{% load in_season %}
+
+<div class="container --full-container js-tabs">
+
+    <ul class="js-tabs__head tabs__head">
+        {% for season in seasons %}
+            {% if forloop.first %}
+                <li class="active">{{ season.name }}</li>
+            {% else %}
+                <li>{{ season.name }}</li>
+            {% endif %}
+        {% endfor %}
+
+    </ul>
+
+    <div class="section-title --center">
+        <h2>Recepten met Flowers ’N’ Gin </h2>
+    </div>
+
+    <div class="js-tabs__content active">
+        <div class="recepten-list">
+            {% for recipe in recipes|in_season:seasons.0 %}
+                {% if forloop.counter < 5 %}
+                    <div class="recepten-single --content">
+                        <div class="img">
+                            <img src="{{ recipe.image.url }}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <span>{{ recipe.name }}</span>
+                            </h3>
+                            <h5>Ingrediënten</h5>
+                            {{ recipe.text|safe }}
+                        </div>
+                    </div>
+                {% else %}
+                    {{ break }}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="js-tabs__content">
+        <div class="recepten-list">
+
+            {% for recipe in recipes|in_season:seasons.1 %}
+                {% if forloop.counter < 5 %}
+                    <div class="recepten-single --content">
+                        <div class="img">
+                            <img src="{{ recipe.image.url }}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <span>{{ recipe.name }}</span>
+                            </h3>
+                            <h5>Ingrediënten</h5>
+                            {{ recipe.text|safe }}
+                        </div>
+                    </div>
+                {% else %}
+                    {{ break }}
+                {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <div class="js-tabs__content">
+        <div class="recepten-list">
+
+            {% for recipe in recipes|in_season:seasons.2 %}
+                {% if forloop.counter < 5 %}
+                    <div class="recepten-single --content">
+                        <div class="img">
+                            <img src="{{ recipe.image.url }}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <span>{{ recipe.name }}</span>
+                            </h3>
+                            <h5>Ingrediënten</h5>
+                            {{ recipe.text|safe }}
+                        </div>
+                    </div>
+                {% else %}
+                    {{ break }}
+                {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <div class="js-tabs__content">
+        <div class="recepten-list">
+
+            {% for recipe in recipes|in_season:seasons.3 %}
+                {% if forloop.counter < 5 %}
+                    <div class="recepten-single --content">
+                        <div class="img">
+                            <img src="{{ recipe.image.url }}" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>
+                                <span>{{ recipe.name }}</span>
+                            </h3>
+                            <h5>Ingrediënten</h5>
+                            {{ recipe.text|safe }}
+                        </div>
+                    </div>
+                {% else %}
+                    {{ break }}
+                {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <a href="#contact" class="btn --white js-scroll-to">Een eigen recept?</a>
+    <p class="small --center">Deel het met ons en wie weet vind je het binnenkort terug op de website</p>
+
+</div>
