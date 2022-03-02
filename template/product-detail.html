@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ object.name }}</title>
+    {% include 'includes/header.html' %}
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header id="header-menu">
+        {% include 'includes/header-menu.html' %}
+    </header>
+
+    <main>
+
+        <nav class="breadcrumbs container" aria-label="Breadcrumb">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="{% url 'store-index' %}">Webshop</a></li>
+                <li><a href="{{ object.url }}" aria-current="page">FlowersNoGin Spring Edition</a></li>
+            </ul>
+        </nav>
+
+        <section class="product">
+            <div class="container">
+                <div class="product-block">
+                    <div class="product-img">
+                        <img src="{{ object.image.url }}" alt="">
+                    </div>
+                    <div class="product-info">
+                        <header>
+                            <h1 class="like-h3">{{ object.name }}</h1>
+                            <div class="price">€ {{ object.price }} <span>incl. BTW</span></div>
+                            <div class="delivery">+ € 5,95 Verzendkosten in België</div>
+                            <form method="" action="" class="add-to-shopping-cart">
+                                <div class="js-like-number like-number">
+                                    <div class="like-number__m" data-minval="0"></div>
+                                    <input type="text" name="amount" value="1">
+                                    <div class="like-number__p"></div>
+                                </div>
+                                <button type="submit" class="btn --yellow">Voeg toe aan winkelwagen</button>
+                            </form>
+                        </header>
+                        <div class="desc">
+                            {{ object.description|safe }}
+                        </div>
+                        <footer>
+                            <div class="soc-block">
+                                <span>Deel product</span>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ object.url }}"
+                                   class="icon-btn --facebook" rel="noopener noreferrer"></a>
+                                <a href="https://twitter.com/intent/tweet?url={{ object.url }}&text={{ object.description }}"
+                                   class="icon-btn --twitter" rel="noopener noreferrer"></a>
+                                <a href="mailto:info@example.com?&subject=&cc=&bcc=&body={{ object.url }}%0A"
+                                   class="icon-btn --envelope" rel="noopener noreferrer"></a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related">
+            <div class="container">
+                <div class="related-block">
+                    <div class="section-title --center">
+                        <h2>Misschien vind je dit ook lekker</h2>
+                    </div>
+                    <div class="related-list">
+                        {% for product in related_products %}
+                            <article class="overview-single">
+                                <a href="{{ product.url }}" class="product-img">
+                                    <img src="{{ product.image.url }}" alt="">
+                                </a>
+                                <div class="content">
+                                    <a href="{{ product.url }}">
+                                        <h2 class="name">{{ product.name }}</h2>
+                                    </a>
+                                    <div class="price">€ {{ product.price }}</div>
+                                </div>
+                            </article>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="section-title --center container">
+                <h2>Reacties van de mensen</h2>
+            </div>
+            <div class="reviews-slider js-reviews-slider">
+
+                <div class="reviews__single">
+                    <div class="stars">
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div></div>
+                    </div>
+                    <div class="desc">
+                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
+                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
+                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
+                        <p>Zeker vermelden dan!</p>
+                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
+                    </div>
+                    <h4>Peter Janssen</h4>
+                </div>
+
+                <div class="reviews__single">
+                    <div class="stars">
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                    </div>
+                    <div class="desc">
+                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
+                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
+                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
+                        <p>Zeker vermelden dan!</p>
+                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
+                    </div>
+                    <h4>Peter Janssen</h4>
+                </div>
+
+                <div class="reviews__single">
+                    <div class="stars">
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                    </div>
+                    <div class="desc">
+                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
+                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
+                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
+                        <p>Zeker vermelden dan!</p>
+                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
+                    </div>
+                    <h4>Peter Janssen</h4>
+                </div>
+
+                <div class="reviews__single">
+                    <div class="stars">
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                    </div>
+                    <div class="desc">
+                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
+                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
+                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
+                        <p>Zeker vermelden dan!</p>
+                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
+                    </div>
+                    <h4>Peter Janssen</h4>
+                </div>
+
+                <div class="reviews__single">
+                    <div class="stars">
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                    </div>
+                    <div class="desc">
+                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
+                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
+                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
+                        <p>Zeker vermelden dan!</p>
+                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
+                    </div>
+                    <h4>Peter Janssen</h4>
+                </div>
+
+                <div class="reviews__single">
+                    <div class="stars">
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                        <div class="yellow"></div>
+                    </div>
+                    <div class="desc">
+                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
+                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
+                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
+                        <p>Zeker vermelden dan!</p>
+                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
+                    </div>
+                    <h4>Peter Janssen</h4>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer-page">
+        {% include 'includes/footer.html' %}
+    </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+[
+  {
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+      "image": "photos/products/Flowers N Gin Autumn.jpg",
+      "slug": "FlowersNGin Summer edition 7",
+      "name_en_us": "FlowersNGin Summer edition",
+      "name_nl": "FlowersNGin Summer edition",
+      "name_fr": "FlowersNGin Summer edition",
+      "description_en_us": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "description_fr": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "description_nl": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "price": 12.2,
+      "stock": 10,
+      "is_published": true
+    }
+  },
+    {
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+      "image": "photos/products/Flowers N Gin Autumn.jpg",
+      "slug": "FlowersNGin Summer edition 3",
+      "name_en_us": "FlowersNGin Summer edition",
+      "name_nl": "FlowersNGin Summer edition",
+      "name_fr": "FlowersNGin Summer edition",
+      "description_en_us": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "description_fr": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "description_nl": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "price": 12.2,
+      "stock": 10,
+      "is_published": true
+    }
+  },
+    {
+    "model": "store.product",
+    "pk": 3,
+    "fields": {
+      "image": "photos/products/Flowers NO Gin_.jpg",
+      "slug": "FlowersNGin Summer edition 1",
+      "name_en_us": "FlowersNGin Summer edition",
+      "name_nl": "FlowersNGin Summer edition",
+      "name_fr": "FlowersNGin Summer edition",
+      "description_en_us": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "description_fr": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "description_nl": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "price": 12.2,
+      "stock": 10,
+      "is_published": true
+    }
+  },
+    {
+    "model": "store.product",
+    "pk": 4,
+    "fields": {
+      "image": "photos/products/Flowers N Gin Winter.jpg",
+      "slug": "FlowersNGin Summer edition 2",
+      "name_en_us": "FlowersNGin Summer edition",
+      "name_nl": "FlowersNGin Summer edition",
+      "name_fr": "FlowersNGin Summer edition",
+      "description_en_us": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "description_fr": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "description_nl": "<p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>\n\t\t\t\t\t\t\t<p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>\n\t\t\t\t\t\t\t<p>Zeker vermelden dan!</p>\n\t\t\t\t\t\t\t<p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>",
+      "price": 12.2,
+      "stock": 10,
+      "is_published": true
+    }
+  }
+]
