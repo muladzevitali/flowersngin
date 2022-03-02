@@ -10,12 +10,16 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import decimal
 from pathlib import Path
 
 from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+CONTEXT = decimal.getcontext()
+CONTEXT.prec = 3
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -40,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ckeditor',
     'apps.store',
-    'apps.user'
+    'apps.user',
+    'apps.cart'
 ]
 
 MIDDLEWARE = [
@@ -68,7 +73,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'apps.store.context_processors.seasons_context',
-                'apps.store.context_processors.reviews_context'
+                'apps.store.context_processors.reviews_context',
+                'apps.cart.context_processors.cart_item_counter'
             ],
         },
     },
@@ -147,3 +153,5 @@ CKEDITOR_CONFIGS = {
         ],
     }
 }
+
+TAX = decimal.Decimal(0.02, CONTEXT)

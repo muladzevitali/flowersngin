@@ -14,7 +14,7 @@
 
     <div class="header-shopping-cart">
         <a class="cart-link" href="{% url 'cart-index' %}" aria-live="assertive" aria-atomic="true">
-            <span class="cart-total">1</span>
+            <span class="cart-total">{{ num_items_in_cart }}</span>
         </a>
     </div>
 

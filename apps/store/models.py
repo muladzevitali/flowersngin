@@ -18,10 +18,10 @@ class Season(TimeStampedModel):
 
 
 class Product(TimeStampedModel):
-    name = models.CharField(max_length=200,  verbose_name=_('name'))
+    name = models.CharField(max_length=200, verbose_name=_('name'))
     slug = models.SlugField(max_length=200)
     description = RichTextField(max_length=500, blank=True, verbose_name=_('description'))
-    price = models.FloatField(verbose_name=_('price'))
+    price = models.DecimalField(verbose_name=_('price'), max_digits=8, decimal_places=2)
     image = models.ImageField(upload_to='photos/products', null=True, blank=True)
     stock = models.IntegerField(verbose_name=_('stock'))
     is_published = models.BooleanField(default=True, verbose_name=_('published'))
@@ -35,7 +35,7 @@ class Product(TimeStampedModel):
 
     @property
     def add_to_cart_url(self):
-        return reverse('add_to_cart', args=[self.id])
+        return reverse('add-to-cart', args=[self.id])
 
     @property
     def remove_from_cart_url(self):

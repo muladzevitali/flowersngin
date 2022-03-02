@@ -35,10 +35,11 @@
                             <h1 class="like-h3">{{ object.name }}</h1>
                             <div class="price">€ {{ object.price }} <span>incl. BTW</span></div>
                             <div class="delivery">+ € 5,95 Verzendkosten in België</div>
-                            <form method="" action="" class="add-to-shopping-cart">
+                            <form method="post" action="{{ product.add_to_cart_url }}" class="add-to-shopping-cart">
+                                {% csrf_token %}
                                 <div class="js-like-number like-number">
                                     <div class="like-number__m" data-minval="0"></div>
-                                    <input type="text" name="amount" value="1">
+                                    <input type="text" name="quantity" value="1">
                                     <div class="like-number__p"></div>
                                 </div>
                                 <button type="submit" class="btn --yellow">Voeg toe aan winkelwagen</button>
