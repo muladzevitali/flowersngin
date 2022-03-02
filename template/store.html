@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webshop</title>
-    <!--font, css, js -->
     {% include 'includes/header.html' %}
 
 </head>
@@ -13,7 +12,7 @@
 <div class="wrapper">
 
     <header id="header-menu">
-            {% include 'includes/header-menu.html' %}
+        {% include 'includes/header-menu.html' %}
 
     </header>
 
@@ -24,211 +23,29 @@
                 <div class="section-title">
                     <h1>Shop the bottle online</h1>
                 </div>
+            {{ page }}
                 <div class="overview-list">
-
-                    <article class="overview-single">
-                        <a href="/productpagina.php" class="product-img">
-                            <img src="/static/images/Flowers NO Gin_.jpg" alt="">
-                        </a>
-                        <div class="content">
-                            <a href="/productpagina.php">
-                                <h2 class="name">FlowersNoGin Spring edition</h2>
+                    {% for product in object_list %}
+                        <article class="overview-single">
+                            <a href="{{ product.url }}" class="product-img">
+                                <img src="{{ product.image.url }}" alt="">
                             </a>
-                            <div class="price">€ 30,00</div>
-                        </div>
-                    </article>
+                            <div class="content">
+                                <a href="{{ product.url }}">
+                                    <h2 class="name">{{ product.name }}</h2>
+                                </a>
+                                <div class="price">€ {{ product.price }}</div>
+                            </div>
+                        </article>
+                    {% endfor %}
 
-                    <article class="overview-single">
-                        <a href="/productpagina.php" class="product-img">
-                            <img src="/static/images/Flowers N Gin Summer.jpg" alt="">
-                        </a>
-                        <div class="content">
-                            <a href="/productpagina.php">
-                                <h2 class="name">FlowersNGin Summer edition</h2>
-                            </a>
-                            <div class="price">€ 47,50</div>
-                        </div>
-                    </article>
-
-                    <article class="overview-single">
-                        <a href="/productpagina.php" class="product-img">
-                            <img src="/static/images/Flowers N Gin Autumn.jpg" alt="">
-                        </a>
-                        <div class="content">
-                            <a href="/productpagina.php">
-                                <h2 class="name">FlowersNGin Autumn edition</h2>
-                            </a>
-                            <div class="price">€ 47,50</div>
-                        </div>
-                    </article>
-
-                    <article class="overview-single">
-                        <a href="/productpagina.php" class="product-img">
-                            <img src="/static/images/Flowers N Gin Winter.jpg" alt="">
-                        </a>
-                        <div class="content">
-                            <a href="/productpagina.php">
-                                <h2 class="name">FlowersNGin Winter edition</h2>
-                            </a>
-                            <div class="price">€ 47,50</div>
-                        </div>
-                    </article>
-
-                    <article class="overview-single">
-                        <a href="/productpagina.php" class="product-img">
-                            <img src="/static/images/Summer Gift Box 1.jpg" alt="">
-                        </a>
-                        <div class="content">
-                            <a href="/productpagina.php">
-                                <h2 class="name">FlowersNGin Summer Gift Box</h2>
-                            </a>
-                            <div class="price">€ 62,50</div>
-                        </div>
-                    </article>
-
-                    <article class="overview-single">
-                        <a href="/productpagina.php" class="product-img">
-                            <img src="/static/images/Autumn Gift Box 1.jpg" alt="">
-                        </a>
-                        <div class="content">
-                            <a href="/productpagina.php">
-                                <h2 class="name">FlowersNGin Autumn Gift Box</h2>
-                            </a>
-                            <div class="price">€ 62,50</div>
-                        </div>
-                    </article>
-
-                    <article class="overview-single">
-                        <a href="/productpagina.php" class="product-img">
-                            <img src="/static/images/Winter Gift Box 1.jpg" alt="">
-                        </a>
-                        <div class="content">
-                            <a href="/productpagina.php">
-                                <h2 class="name">FlowersNGin Winter Gift Box</h2>
-                            </a>
-                            <div class="price">€ 62,50</div>
-                        </div>
-                    </article>
 
                 </div>
             </div>
         </section>
 
         <section id="reviews" class="reviews">
-            <div class="section-title --center container">
-                <h2>Reacties van de mensen</h2>
-            </div>
-            <div class="reviews-slider js-reviews-slider">
-
-                <div class="reviews__single">
-                    <div class="stars">
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div></div>
-                    </div>
-                    <div class="desc">
-                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
-                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
-                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
-                        <p>Zeker vermelden dan!</p>
-                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
-                    </div>
-                    <h4>Peter Janssen</h4>
-                </div>
-
-                <div class="reviews__single">
-                    <div class="stars">
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                    </div>
-                    <div class="desc">
-                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
-                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
-                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
-                        <p>Zeker vermelden dan!</p>
-                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
-                    </div>
-                    <h4>Peter Janssen</h4>
-                </div>
-
-                <div class="reviews__single">
-                    <div class="stars">
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                    </div>
-                    <div class="desc">
-                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
-                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
-                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
-                        <p>Zeker vermelden dan!</p>
-                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
-                    </div>
-                    <h4>Peter Janssen</h4>
-                </div>
-
-                <div class="reviews__single">
-                    <div class="stars">
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                    </div>
-                    <div class="desc">
-                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
-                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
-                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
-                        <p>Zeker vermelden dan!</p>
-                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
-                    </div>
-                    <h4>Peter Janssen</h4>
-                </div>
-
-                <div class="reviews__single">
-                    <div class="stars">
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                    </div>
-                    <div class="desc">
-                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
-                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
-                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
-                        <p>Zeker vermelden dan!</p>
-                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
-                    </div>
-                    <h4>Peter Janssen</h4>
-                </div>
-
-                <div class="reviews__single">
-                    <div class="stars">
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                        <div class="yellow"></div>
-                    </div>
-                    <div class="desc">
-                        <p>Je voelt de passie in deze florale en toegankelijke gin die gemakkelijk en origineel te
-                            drinken is! Thé place to be is Natuurlijk in ‘s Gravenwezel!</p>
-                        <p>Maar weet je plaatsen waar dit juweeltje moet geschonken worden?</p>
-                        <p>Zeker vermelden dan!</p>
-                        <p>Met de kunstig uitgewerkte fles op zich geniet je zelfs leeg nog lang na!</p>
-                    </div>
-                    <h4>Peter Janssen</h4>
-                </div>
-
-            </div>
+            {% include 'includes/reviews.html' %}
         </section>
 
     </main>
