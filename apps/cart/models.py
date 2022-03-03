@@ -1,6 +1,6 @@
-from model_utils.models import TimeStampedModel
 from django.db import models
 from django.shortcuts import reverse
+from model_utils.models import TimeStampedModel
 
 
 def get_cart_id(request):

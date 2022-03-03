@@ -1,0 +1,11 @@
+[
+  {
+    "model": "order.country",
+    "pk": 1,
+    "fields": {
+      "name_en_us": "België",
+      "name_nl": "België",
+      "name_fr": "België"
+    }
+  }
+]
