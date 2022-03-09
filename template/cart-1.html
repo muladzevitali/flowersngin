@@ -1,0 +1,105 @@
+{% load static %}
+{% load i18n %}
+{% load settings_value %}
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% translate 'Winkelwagen' %}</title>
+    <!--font, css, js -->
+    {% include 'includes/header.html' %}
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header id="header-menu">
+        {% include 'includes/header-menu.html' %}
+    </header>
+
+    <main>
+        <!-- //NOTE use class="--step-1" , "--step-2", "--step-3" in depends from current checkout progress -->
+        <section class="shopping-cart-section --step-1">
+            <div class="container">
+                <ul class="shopping-cart-progress">
+                    <li>{% translate 'winkelwagen' %}</li>
+                    <li>{% translate 'gegevens' %}</li>
+                    <li>{% translate 'bevestiging' %}</li>
+                </ul>
+                <div class="section-title">
+                    <h1 class="like-h3">{% translate 'Overzicht van uw bestelling' %}</h1>
+                </div>
+                <form  action="" class="step1">
+
+                    <div class="step1__top">
+                        <div class="cart-list">
+
+                            <div class="cart-list__item --title">
+                                <div class="col-items">{% translate 'Artikel' %}</div>
+                                <div class="col-subtotal">{% translate 'Subtotaal' %}</div>
+                                <div class="col-quantity">{% translate 'Aantal' %}</div>
+                                <div class="col-price">{% translate 'Prijs' %}</div>
+                            </div>
+                            {% for cart_item in cart_items %}
+                                <div class="cart-list__item">
+                                    <div class="col-items">
+                                        <span class="title hide-desktop">{% translate 'Artikel' %}</span>
+                                        <img src="{{ cart_item.product.image.url }}" alt="">
+                                        <div>{{ cart_item.product.name }}</div>
+                                    </div>
+                                    <div class="col-subtotal">
+                                        <span class="title hide-desktop">{% translate 'Subtotaal' %}</span>
+                                        <div class="price">€ {{ cart_item.total|floatformat:2 }}</div>
+                                    </div>
+                                    <div class="col-amount">
+                                        <span class="title hide-desktop">{% translate 'Aantal' %}</span>
+                                        <div class="js-like-number like-number">
+                                            <a href="{{ cart_item.decrement_cart_item_quantity_url }}"
+                                               class="like-number__m" type="button" id="button-minus">
+                                            </a>
+                                            <input type="text" value="{{ cart_item.quantity }}">
+                                            <a href="{{ cart_item.increment_cart_item_quantity_url }}"
+                                               class="like-number__p" type="button" id="button-plus">
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-price">
+                                        <span class="title hide-desktop">{% translate 'Prijs' %}</span>
+                                        <div class="price">€ {{ cart_item.product.price }}</div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+
+                        </div>
+                        <div class="cart-totaal">
+                            <div class="cart-totaal__item">
+                                <div class="name">{% translate 'Verzendkosten' %}</div>
+                                <div class="price">€ {% settings_value 'SHIPPING_TO_BELGIUM' %}</div>
+                            </div>
+                            <div class="cart-totaal__item">
+                                <div class="name">{% translate 'Totaal incl. 21% BTW' %}</div>
+                                <div class="price">€ {{ grand_total|floatformat:2 }}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step1__footer">
+                        <a href="{% url 'store-index' %}" class="btn --black">{% translate 'Terug naar de shop' %}</a>
+                        <a href="{% url 'order-index' %}" class="btn --black">{% translate 'Verder met bestelling' %}</a>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer-page">
+        {% include 'includes/footer.html' %}
+    </footer>
+
+</div>
+</body>
+</html>

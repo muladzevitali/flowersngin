@@ -1,0 +1,407 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-09 21:32+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\template\base.html:9 .\template\product-detail.html:25
+msgid "Home"
+msgstr ""
+
+#: .\template\base.html:32
+msgid "20 jaar Natuurlijk Bloembinders, tijd voor een eigen gin"
+msgstr ""
+
+#: .\template\base.html:34
+msgid ""
+"Bij Natuurlijk Bloembinders werken we al 20 jaar met het mooiste wat de "
+"natuur biedt! Bloemen, planten, kruiden en groen gaan elke dag door onze "
+"handen, we creëren er de prachtigste boeketten en florale arrangementen mee."
+msgstr ""
+
+#: .\template\base.html:35
+msgid ""
+"Naast onze hartstocht voor het florale werk, sluimerde er nog een andere "
+"passie, namelijk die voor gin. Die passie wortelde verder tijdens de "
+"opendeurdagen van Natuurlijk en op evenementen zoals Wezel Culinair. We "
+"serveerden er premium gins met een eigengemaakte selectie van botanicals, "
+"diepgevroren in ijs, ter plekke losgehakt en geserveerd."
+msgstr ""
+
+#: .\template\base.html:36
+msgid ""
+"20 jaar Natuurlijk Bloembinders vieren we in gepaste stijl en hoe kan dat "
+"beter dan met de lancering van onze eigen gin? FLOWERSNGIN bevat 20 "
+"botanicals die we in de loop van de jaren zorgvuldig selecteerden en waarvan "
+"we zelf veel houden."
+msgstr ""
+
+#: .\template\base.html:38 .\template\includes\botanicals.html:66
+msgid "Shop the bottle"
+msgstr ""
+
+#: .\template\base.html:58
+msgid "Vragen, opmerkingen,"
+msgstr ""
+
+#: .\template\base.html:58
+msgid "een lekker recept delen?"
+msgstr ""
+
+#: .\template\base.html:65 .\template\base.html:67 .\template\cart-2.html:52
+#: .\template\cart-2.html:55 .\template\cart-2.html:120
+#: .\template\cart-2.html:122
+msgid "Voornaam"
+msgstr "Prénom"
+
+#: .\template\base.html:71 .\template\base.html:73 .\template\cart-2.html:58
+#: .\template\cart-2.html:61 .\template\cart-2.html:125
+#: .\template\cart-2.html:127
+msgid "Achternaam"
+msgstr "Nom de famille"
+
+#: .\template\base.html:77 .\template\base.html:78 .\template\cart-2.html:64
+#: .\template\cart-2.html:66 .\template\includes\footer.html:15
+msgid "Telefoonnummer"
+msgstr "Numéro de téléphone"
+
+#: .\template\base.html:82 .\template\base.html:84 .\template\cart-2.html:69
+#: .\template\cart-2.html:72 .\template\includes\footer.html:11
+msgid "E-mailadres"
+msgstr "Adresse E-mail"
+
+#: .\template\base.html:93
+msgid "Onderwerp"
+msgstr "Sujet"
+
+#: .\template\base.html:97 .\template\base.html:99
+msgid "Vraag"
+msgstr "Interroger"
+
+#: .\template\base.html:97 .\template\base.html:99
+msgid "opmerking"
+msgstr "remarque"
+
+#: .\template\base.html:104 .\template\cart-2.html:188
+msgid "Ik ga akkoord met de"
+msgstr "Je suis d'accord avec le"
+
+#: .\template\base.html:108
+msgid "VERSTUUR BERICHT"
+msgstr "ENVOYER LE MESSAGE"
+
+#: .\template\cart-1.html:9
+msgid "Winkelwagen"
+msgstr ""
+
+#: .\template\cart-1.html:26 .\template\cart-2.html:26
+#: .\template\cart-3.html:25
+msgid "winkelwagen"
+msgstr ""
+
+#: .\template\cart-1.html:27 .\template\cart-2.html:27
+#: .\template\cart-3.html:26
+msgid "gegevens"
+msgstr ""
+
+#: .\template\cart-1.html:28 .\template\cart-2.html:28
+#: .\template\cart-3.html:27
+msgid "bevestiging"
+msgstr ""
+
+#: .\template\cart-1.html:31
+msgid "Overzicht van uw bestelling"
+msgstr ""
+
+#: .\template\cart-1.html:39 .\template\cart-1.html:47
+#: .\template\mail\order-email.html:104
+msgid "Artikel"
+msgstr ""
+
+#: .\template\cart-1.html:40 .\template\cart-1.html:52
+#: .\template\cart-2.html:173 .\template\mail\order-email.html:145
+msgid "Subtotaal"
+msgstr ""
+
+#: .\template\cart-1.html:41 .\template\cart-1.html:56
+#: .\template\mail\order-email.html:112
+msgid "Aantal"
+msgstr ""
+
+#: .\template\cart-1.html:42 .\template\cart-1.html:69
+#: .\template\mail\order-email.html:116
+msgid "Prijs"
+msgstr ""
+
+#: .\template\cart-1.html:78 .\template\cart-2.html:177
+#: .\template\mail\order-email.html:155
+msgid "Verzendkosten"
+msgstr ""
+
+#: .\template\cart-1.html:82 .\template\cart-2.html:181
+#, python-format
+msgid "Totaal incl. 21%% BTW"
+msgstr ""
+
+#: .\template\cart-1.html:89
+msgid "Terug naar de shop"
+msgstr ""
+
+#: .\template\cart-1.html:90
+msgid "Verder met bestelling"
+msgstr ""
+
+#: .\template\cart-2.html:10
+msgid "Gegevens"
+msgstr ""
+
+#: .\template\cart-2.html:31
+msgid "Bestelling afrekenen"
+msgstr ""
+
+#: .\template\cart-2.html:39
+msgid "Dit is een zakelijke bestelling"
+msgstr ""
+
+#: .\template\cart-2.html:42 .\template\cart-2.html:44
+msgid "Bedrijfsnaam"
+msgstr ""
+
+#: .\template\cart-2.html:47 .\template\cart-2.html:49
+msgid "BTW-nummer"
+msgstr ""
+
+#: .\template\cart-2.html:75 .\template\cart-2.html:77
+#: .\template\cart-2.html:131 .\template\cart-2.html:133
+#, fuzzy
+#| msgid "Achternaam"
+msgid "Straatnaam"
+msgstr "Nom de famille"
+
+#: .\template\cart-2.html:80 .\template\cart-2.html:82
+#: .\template\cart-2.html:136 .\template\cart-2.html:138
+msgid "Huisnr"
+msgstr ""
+
+#: .\template\cart-2.html:85 .\template\cart-2.html:87
+#: .\template\cart-2.html:141 .\template\cart-2.html:143
+msgid "Bus"
+msgstr ""
+
+#: .\template\cart-2.html:90 .\template\cart-2.html:92
+#: .\template\cart-2.html:146 .\template\cart-2.html:148
+msgid "Postcode"
+msgstr ""
+
+#: .\template\cart-2.html:95 .\template\cart-2.html:97
+#: .\template\cart-2.html:151 .\template\cart-2.html:153
+msgid "Plaats"
+msgstr ""
+
+#: .\template\cart-2.html:106 .\template\cart-2.html:163
+msgid "Land"
+msgstr ""
+
+#: .\template\cart-2.html:110
+msgid "Ophalen in winkel"
+msgstr ""
+
+#: .\template\cart-2.html:114
+msgid "Op een ander adres laten bezorgen"
+msgstr ""
+
+#: .\template\cart-2.html:118
+msgid "Afleveradres"
+msgstr ""
+
+#: .\template\cart-2.html:170
+msgid "Overzicht"
+msgstr ""
+
+#: .\template\cart-2.html:192
+msgid "Afrekenen"
+msgstr ""
+
+#: .\template\cart-3.html:8
+msgid "Bevestiging"
+msgstr ""
+
+#: .\template\cart-3.html:31
+msgid "Uw bestelling en betaling zijn voltooid"
+msgstr ""
+
+#: .\template\cart-3.html:34
+msgid ""
+"U zal zodadelijk een bevestigingsemail ontvangen van uw bestelling en een "
+"overzicht van uw betaling. Indien u vragen heeft, neem dan"
+msgstr ""
+
+#: .\template\cart-3.html:34 .\template\includes\header-menu.html:39
+msgid "contact"
+msgstr ""
+
+#: .\template\cart-3.html:34
+msgid "met ons op."
+msgstr ""
+
+#: .\template\cart-3.html:36
+msgid "Terug naar home"
+msgstr ""
+
+#: .\template\includes\botanicals.html:19
+msgid "Een greep uit de botanicals"
+msgstr ""
+
+#: .\template\includes\footer.html:19
+msgid "Adres"
+msgstr ""
+
+#: .\template\includes\footer.html:35
+msgid "Natuurlijk Bloembinders"
+msgstr ""
+
+#: .\template\includes\footer.html:35
+msgid "Alle rechten voorbehouden"
+msgstr ""
+
+#: .\template\includes\footer.html:38
+msgid "Website met"
+msgstr ""
+
+#: .\template\includes\footer.html:39
+msgid "gemaakt door"
+msgstr ""
+
+#: .\template\includes\footer.html:42
+msgid "Adbuddy"
+msgstr ""
+
+#: .\template\includes\header-menu.html:12
+msgid "scroll"
+msgstr ""
+
+#: .\template\includes\header-menu.html:36
+msgid "story"
+msgstr ""
+
+#: .\template\includes\header-menu.html:37
+msgid "reviews"
+msgstr ""
+
+#: .\template\includes\header-menu.html:38
+msgid "recipes"
+msgstr ""
+
+#: .\template\includes\header-menu.html:40
+msgid "webshop"
+msgstr ""
+
+#: .\template\includes\recipes.html:19
+msgid "Recepten met Flowers ’N’ Gin "
+msgstr ""
+
+#: .\template\includes\recipes.html:34 .\template\includes\recipes.html:58
+#: .\template\includes\recipes.html:83 .\template\includes\recipes.html:108
+msgid "Ingrediënten"
+msgstr ""
+
+#: .\template\includes\recipes.html:120
+msgid "Een eigen recept?"
+msgstr ""
+
+#: .\template\includes\recipes.html:121
+msgid "Deel het met ons en wie weet vind je het binnenkort terug op de website"
+msgstr ""
+
+#: .\template\includes\reviews.html:6
+msgid "Reacties van de mensen"
+msgstr ""
+
+#: .\template\mail\order-email.html:9
+msgid "Bedankt voor je bestelling"
+msgstr ""
+
+#: .\template\mail\order-email.html:55
+msgid "Beste"
+msgstr ""
+
+#: .\template\mail\order-email.html:57
+msgid "Bedankt voor je bestelling met bestelnummer"
+msgstr ""
+
+#: .\template\mail\order-email.html:60
+msgid "Facturatiegegevens"
+msgstr ""
+
+#: .\template\mail\order-email.html:83
+msgid ""
+"Je ontvangt een e-mail wanneer je bestelling afgehaald kan worden in onze "
+"winkel."
+msgstr ""
+
+#: .\template\mail\order-email.html:87
+msgid "Verzendadres"
+msgstr ""
+
+#: .\template\mail\order-email.html:108
+msgid "Eenheidsprijs"
+msgstr ""
+
+#: .\template\mail\order-email.html:165
+msgid "Totaal"
+msgstr ""
+
+#: .\template\mail\order-email.html:166
+#, python-format
+msgid "incl. 21%% BTW"
+msgstr ""
+
+#: .\template\mail\order-email.html:176
+msgid "Met vriendelijke groeten"
+msgstr ""
+
+#: .\template\mail\order-email.html:178
+msgid "Het Flowersngin Team"
+msgstr ""
+
+#: .\template\product-detail.html:26 .\template\store.html:8
+msgid "Webshop"
+msgstr ""
+
+#: .\template\product-detail.html:40
+msgid "incl. BTW"
+msgstr ""
+
+#: .\template\product-detail.html:41
+msgid "Verzendkosten in België"
+msgstr ""
+
+#: .\template\product-detail.html:49
+msgid "Voeg toe aan winkelwagen"
+msgstr ""
+
+#: .\template\product-detail.html:57
+msgid "Deel product"
+msgstr ""
+
+#: .\template\product-detail.html:75
+msgid "Misschien vind je dit ook lekker"
+msgstr ""
+
+#: .\template\store.html:26
+msgid "Shop the bottle online"
+msgstr ""

@@ -1,0 +1,210 @@
+{% load static %}
+{% load i18n %}
+{% load settings_value %}
+
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% translate 'Gegevens' %}</title>
+    <!--font, css, js -->
+    {% include 'includes/header.html' %}
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header id="header-menu">
+        {% include 'includes/header-menu.html' %}
+    </header>
+
+    <main>
+        <section class="shopping-cart-section --step-2">
+            <div class="container">
+                <ul class="shopping-cart-progress">
+                    <li>{% translate 'winkelwagen' %}</li>
+                    <li>{% translate 'gegevens' %}</li>
+                    <li>{% translate 'bevestiging' %}</li>
+                </ul>
+                <div class="section-title">
+                    <h1 class="like-h3">{% translate 'Bestelling afrekenen' %}</h1>
+                </div>
+                <form method="post" action="{% url 'order-index' %}" class="step2">
+                    {% csrf_token %}
+                    <div class="step2__left">
+                        <div class="fieldset form-row">
+                            <div class="col col-1">
+                                <input type="checkbox" name="privacy" id="client_type" value="">
+                                <label for="client_type">{% translate 'Dit is een zakelijke bestelling' %}</label>
+                            </div>
+                            <div class="col col-2 js-company__field" style="display: none;">
+                                <input type="text" name="company_name" placeholder="{% translate 'Bedrijfsnaam' %}*"
+                                       id="formfield-2">
+                                <label for="formfield-2">{% translate 'Bedrijfsnaam' %}*</label>
+                            </div>
+                            <div class="col col-2 js-company__field" style="display: none;">
+                                <input type="text" name="btw_number" placeholder="{% translate 'BTW-nummer' %}*"
+                                       id="formfield-3">
+                                <label for="formfield-3">{% translate 'BTW-nummer' %}*</label>
+                            </div>
+                            <div class="col col-2">
+                                <input type="text" name="client_first_name" placeholder="{% translate 'Voornaam' %}*"
+                                       required=""
+                                       id="formfield-4">
+                                <label for="formfield-4">{% translate 'Voornaam' %}*</label>
+                            </div>
+                            <div class="col col-2">
+                                <input type="text" name="client_last_name" placeholder="{% translate 'Achternaam' %}*"
+                                       required=""
+                                       id="formfield-5">
+                                <label for="formfield-5">{% translate 'Achternaam' %}*</label>
+                            </div>
+                            <div class="col col-2">
+                                <input type="tel" name="client_phone" placeholder="{% translate 'Telefoonnummer' %}"
+                                       id="formfield-6">
+                                <label for="formfield-6">{% translate 'Telefoonnummer' %}</label>
+                            </div>
+                            <div class="col col-2">
+                                <input type="email" name="client_email" placeholder="{% translate 'E-mailadres' %}*"
+                                       required=""
+                                       id="formfield-7">
+                                <label for="formfield-7">{% translate 'E-mailadres' %}*</label>
+                            </div>
+                            <div class="col col-2">
+                                <input type="text" name="client_street_name" placeholder="{% translate 'Straatnaam' %}"
+                                       id="formfield-8">
+                                <label for="formfield-8">{% translate 'Straatnaam' %}</label>
+                            </div>
+                            <div class="col col-4">
+                                <input type="text" name="client_house_number" placeholder="{% translate 'Huisnr' %}"
+                                       id="formfield-9">
+                                <label for="formfield-9">{% translate 'Huisnr' %}</label>
+                            </div>
+                            <div class="col col-4">
+                                <input type="text" name="client_bus" placeholder="{% translate 'Bus' %}"
+                                       id="formfield-10">
+                                <label for="formfield-10">{% translate 'Bus' %}</label>
+                            </div>
+                            <div class="col col-2">
+                                <input type="text" name="client_postalcode" placeholder="{% translate 'Postcode' %}"
+                                       id="formfield-11">
+                                <label for="formfield-11">{% translate 'Postcode' %}</label>
+                            </div>
+                            <div class="col col-2">
+                                <input type="text" name="client_city" placeholder="{% translate 'Plaats' %}"
+                                       id="formfield-12">
+                                <label for="formfield-12">{% translate 'Plaats' %}</label>
+                            </div>
+                            <div class="col col-1">
+                                <select name="client_country" id="formfield-13">
+                                    <option></option>
+                                    {% for country in form.client_country.field.queryset %}
+                                        <option value="{{ country.pk }}">{% translate country.name %}</option>
+                                    {% endfor %}
+                                </select>
+                                <label for="formfield-13">{% translate 'Land' %}*</label>
+                            </div>
+                            <div class="col col-1">
+                                <input type="checkbox" name="pick_up_from_store" id="ophalen-in-winkel" value="">
+                                <label for="ophalen-in-winkel">{% translate 'Ophalen in winkel' %}</label>
+                            </div>
+                            <div class="col col-1 js-hide__delivery">
+                                <input type="checkbox" name="different_deliver_address" id="delivery-address" value="">
+                                <label for="delivery-address">{% translate 'Op een ander adres laten bezorgen' %}</label>
+                            </div>
+                        </div>
+                        <div class="fieldset form-row js-delivery-address" style="display: none;">
+                            <div class="legend">{% translate 'Afleveradres' %}</div>
+                            <div class="col col-2 required">
+                                <input type="text" name="receiver_first_name" placeholder="{% translate 'Voornaam' %}*"
+                                       id="formfield-16">
+                                <label for="formfield-16">{% translate 'Voornaam' %}*</label>
+                            </div>
+                            <div class="col col-2 required">
+                                <input type="text" name="receiver_last_name" placeholder="{% translate 'Achternaam' %}*"
+                                       id="formfield-17">
+                                <label for="formfield-17">{% translate 'Achternaam' %}*</label>
+                            </div>
+                            <div class="col col-2">
+                                <input type="text" name="receiver_street_name"
+                                       placeholder="{% translate 'Straatnaam' %}"
+                                       id="formfield-18">
+                                <label for="formfield-18">{% translate 'Straatnaam' %}</label>
+                            </div>
+                            <div class="col col-4">
+                                <input type="text" name="receiver_house_number" placeholder="{% translate 'Huisnr' %}"
+                                       id="formfield-19">
+                                <label for="formfield-19">{% translate 'Huisnr' %}</label>
+                            </div>
+                            <div class="col col-4">
+                                <input type="text" name="receiver_bus" placeholder="{% translate 'Bus' %}"
+                                       id="formfield-20">
+                                <label for="formfield-20">{% translate 'Bus' %}</label>
+                            </div>
+                            <div class="col col-2">
+                                <input type="text" name="receiver_postcode" placeholder="{% translate 'Postcode' %}"
+                                       id="formfield-21">
+                                <label for="formfield-21">{% translate 'Postcode' %}</label>
+                            </div>
+                            <div class="col col-2">
+                                <input type="text" name="receiver_city" placeholder="{% translate 'Plaats' %}"
+                                       id="formfield-22">
+                                <label for="formfield-22">{% translate 'Plaats' %}</label>
+                            </div>
+                            <div class="col col-1">
+                                <select name="receiver_country" id="formfield-23">
+                                    <option></option>
+                                    {% for country in form.client_country.field.queryset %}
+                                        <option value="{{ country.pk }}">{% translate country.name %}</option>
+
+                                    {% endfor %}
+                                </select>
+                                <label for="formfield-23">{% translate 'Land' %}*</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step2__right">
+                        <div class="summary">
+                            <div class="legend">{% translate 'Overzicht' %}</div>
+                            <div class="summary-list">
+                                <div class="summary-list__item">
+                                    <div class="name">{% translate 'Subtotaal' %}</div>
+                                    <div class="price">€ {{ total|floatformat:2 }}</div>
+                                </div>
+                                <div class="summary-list__item">
+                                    <div class="name">{% translate 'Verzendkosten' %}</div>
+                                    <div class="price">€ {% settings_value "SHIPPING_TO_BELGIUM" %}</div>
+                                </div>
+                                <div class="summary-list__item">
+                                    <div class="name">{% translate 'Totaal incl. 21% BTW' %}</div>
+                                    <div class="price">€ {{ grand_total|floatformat:2 }}</div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col col-1">
+                                    <input type="checkbox" name="privacy" id="formfield-24" value="" required>
+                                    <label for="formfield-24">{% translate 'Ik ga akkoord met de' %} <a href="#">Privacy
+                                        policy</a>.</label>
+                                </div>
+                                <div class="col col-1 submit-col">
+                                    <button type="submit" class="btn --black">{% translate 'Afrekenen' %}</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer-page">
+        {% include 'includes/footer.html' %}
+    </footer>
+
+</div>
+</body>
+</html>

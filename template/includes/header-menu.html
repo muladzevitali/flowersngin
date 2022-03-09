@@ -1,0 +1,45 @@
+{% load static %}
+{% load i18n %}
+
+<div class="container --full-container">
+    <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="center-nav">
+        <a class="scroll-down js-scroll-to" href="#het-verhaal">{% translate 'scroll' %}</a>
+        <a class="logo" href="/" aria-label="Flowers N Gin"><img src="{% static 'images/logo.png' %}" alt=""></a>
+    </div>
+
+    <div class="header-shopping-cart">
+        <a class="cart-link" href="{% url 'cart-index' %}" aria-live="assertive" aria-atomic="true">
+            <span class="cart-total">{{ num_items_in_cart }}</span>
+        </a>
+    </div>
+
+    <nav class="header-nav">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        <ul class="lang-switcher" id="language-list">
+            {% for language in languages %}
+                <li {% if language.code == LANGUAGE_CODE %} class="active"{% endif %}>
+                    <a href="{% url 'set_language' %}" hreflang="{{ language.code }}"
+                       data-language-code="{{ language.code }}">{{ language.code }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <ul class="main-menu">
+            <li><a href="/#het-verhaal" class="js-scroll-to">{% translate "story" %}</a></li>
+            <li><a href="/#reviews" class="js-scroll-to">{% translate "reviews" %}</a></li>
+            <li><a href="/#recepten" class="js-scroll-to">{% translate 'recipes' %}</a></li>
+            <li><a href="/#contact" class="js-scroll-to">{% translate 'contact' %}</a></li>
+            <li><a class="active" href="{% url 'store-index' %}">{% translate 'webshop' %}</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="menu-overlay" class="overlay"></div>

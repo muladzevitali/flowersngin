@@ -1,0 +1,68 @@
+{% load static %}
+{% load in_season %}
+{% load i18n %}
+
+<div class="container --full-container js-tabs">
+
+    <ul class="js-tabs__head tabs__head">
+        {% for season in seasons %}
+            {% if forloop.first %}
+                <li class="active">{{ season.name }}</li>
+            {% else %}
+                <li>{{ season.name }}</li>
+            {% endif %}
+        {% endfor %}
+
+    </ul>
+
+    <div class="section-title --center">
+        <h2>{% translate 'Een greep uit de botanicals' %}</h2>
+    </div>
+
+    <div class="js-tabs__content active">
+        <div class="botanic-list js-botanic-list">
+            {% for botanical in botanicals|in_season:seasons.0 %}
+                <div class="botanic-single">
+                    <img src="{{ botanical.image.url }}" alt="">
+                    <span>{{ botanical.name }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="js-tabs__content">
+        <div class="botanic-list js-botanic-list">
+            {% for botanical in botanicals|in_season:seasons.1 %}
+                <div class="botanic-single">
+                    <img src="{{ botanical.image.url }}" alt="">
+                    <span>{{ botanical.name }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="js-tabs__content">
+        <div class="botanic-list js-botanic-list">
+            {% for botanical in botanicals|in_season:seasons.2 %}
+                <div class="botanic-single">
+                    <img src="{{ botanical.image.url }}" alt="">
+                    <span>{{ botanical.name }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="js-tabs__content">
+        <div class="botanic-list js-botanic-list">
+            {% for botanical in botanicals|in_season:seasons.3 %}
+                <div class="botanic-single">
+                    <img src="{{ botanical.image.url }}" alt="">
+                    <span>{{ botanical.name }}</span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <a href="{% url 'store-index' %}" class="btn --white">{% translate 'Shop the bottle' %}</a>
+
+</div>

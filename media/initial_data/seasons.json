@@ -1,0 +1,34 @@
+[
+  {
+    "model": "store.season",
+    "pk": 1,
+    "fields": {
+      "name_nl": "Zomer",
+      "name_fr": "L'été"
+    }
+  },
+  {
+    "model": "store.season",
+    "pk": 2,
+    "fields": {
+      "name_nl": "Herfst",
+      "name_fr": "Automne"
+    }
+  },
+  {
+    "model": "store.season",
+    "pk": 3,
+    "fields": {
+      "name_nl": "Winter",
+      "name_fr": "Hiver"
+    }
+  },
+  {
+    "model": "store.season",
+    "pk": 4,
+    "fields": {
+      "name_nl": "Voorjaa",
+      "name_fr": "Printemps"
+    }
+  }
+]

@@ -1,0 +1,49 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% translate 'Bevestiging' %}</title>
+    <!--font, css, js -->
+    {% include 'includes/header.html' %}
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header id="header-menu">
+        {% include 'includes/header-menu.html' %}
+    </header>
+
+    <main>
+
+        <section class="shopping-cart-section --step-3">
+            <div class="container">
+                <ul class="shopping-cart-progress">
+                    <li>{% translate 'winkelwagen' %}</li>
+                    <li>{% translate 'gegevens' %}</li>
+                    <li>{% translate 'bevestiging' %}</li>
+                </ul>
+                <div class="step3">
+                    <div class="section-title --center">
+                        <h1 class="like-h3">{% translate 'Uw bestelling en betaling zijn voltooid' %}</h1>
+                    </div>
+                    <div class="desc">
+                        <p>{% translate 'U zal zodadelijk een bevestigingsemail ontvangen van uw bestelling en een overzicht van uw betaling. Indien u vragen heeft, neem dan' %} <a href="/#contact">{% translate 'contact' %}</a> {% translate 'met ons op.' %}</p>
+                    </div>
+                    <a href="/" class="btn --black">{% translate 'Terug naar home' %}</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer-page">
+        {% include 'includes/footer.html' %}
+    </footer>
+
+</div>
+</body>
+</html>

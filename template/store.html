@@ -1,0 +1,61 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% translate 'Webshop' %}</title>
+    {% include 'includes/header.html' %}
+
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header id="header-menu">
+        {% include 'includes/header-menu.html' %}
+
+    </header>
+
+    <main>
+
+        <section class="webshop-overview">
+            <div class="container">
+                <div class="section-title">
+                    <h1>{% translate 'Shop the bottle online' %}</h1>
+                </div>
+            {{ page }}
+                <div class="overview-list">
+                    {% for product in object_list %}
+                        <article class="overview-single">
+                            <a href="{{ product.url }}" class="product-img">
+                                <img src="{{ product.image.url }}" alt="">
+                            </a>
+                            <div class="content">
+                                <a href="{{ product.url }}">
+                                    <h2 class="name">{{ product.name }}</h2>
+                                </a>
+                                <div class="price">€ {{ product.price }}</div>
+                            </div>
+                        </article>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            {% include 'includes/reviews.html' %}
+        </section>
+
+    </main>
+
+    <footer id="footer-page">
+        {% include 'includes/footer.html' %}
+    </footer>
+
+</div>
+</body>
+</html>

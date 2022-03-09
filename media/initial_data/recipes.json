@@ -1,0 +1,194 @@
+[
+  {
+    "model": "store.recipe",
+    "pk": 1,
+    "fields": {
+      "image": "photos/recipes/limoengras.png",
+      "season": 1,
+      "name_nl": "Lemongrass",
+      "name_fr": "Lemongrass",
+      "text_nl": "<h6>Botanicals</h6>\n\t\t\t\t\t\t\t\t\t<p>Geplette jeneverbes <br>\n\t\t\t\t\t\t\t\t\t\t1/4 Citroengras <br>\n\t\t\t\t\t\t\t\t\t\tMuntblaadje</p>\n\t\t\t\t\t\t\t\t\t<h6>Tonic</h6>\n\t\t\t\t\t\t\t\t\t<p>Double Dutch Indian Tonic</p>\n\t\t\t\t\t\t\t\t\t<h5>Bereiding</h5>\n\t\t\t\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t\t\t\t<li>Neem een groot glas en vul met ijs</li>\n\t\t\t\t\t\t\t\t\t\t<li>Doe 5cl FLOWERSNGIN in het glas</li>\n\t\t\t\t\t\t\t\t\t\t<li>Voeg de botanicals toe</li>\n\t\t\t\t\t\t\t\t\t\t<li>Ruik en ervaar de aroma’s</li>\n\t\t\t\t\t\t\t\t\t\t<li>Overgiet met tonic</li>\n\t\t\t\t\t\t\t\t\t\t<li>Proef en geniet met mate</li>\n\t\t\t\t\t\t\t\t\t</ol>",
+      "text_fr": "<h6>Botanicals</h6>\n\t\t\t\t\t\t\t\t\t<p>Geplette jeneverbes <br>\n\t\t\t\t\t\t\t\t\t\t1/4 Citroengras <br>\n\t\t\t\t\t\t\t\t\t\tMuntblaadje</p>\n\t\t\t\t\t\t\t\t\t<h6>Tonic</h6>\n\t\t\t\t\t\t\t\t\t<p>Double Dutch Indian Tonic</p>\n\t\t\t\t\t\t\t\t\t<h5>Bereiding</h5>\n\t\t\t\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t\t\t\t<li>Neem een groot glas en vul met ijs</li>\n\t\t\t\t\t\t\t\t\t\t<li>Doe 5cl FLOWERSNGIN in het glas</li>\n\t\t\t\t\t\t\t\t\t\t<li>Voeg de botanicals toe</li>\n\t\t\t\t\t\t\t\t\t\t<li>Ruik en ervaar de aroma’s</li>\n\t\t\t\t\t\t\t\t\t\t<li>Overgiet met tonic</li>\n\t\t\t\t\t\t\t\t\t\t<li>Proef en geniet met mate</li>\n\t\t\t\t\t\t\t\t\t</ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 2,
+    "fields": {
+      "image": "photos/recipes/gember.png",
+      "season": 1,
+      "name_nl": "Ginger",
+      "name_fr": "Ginger",
+      "text_nl": "<h6>Botanicals</h6>\n\t\t\t\t\t\t\t\t\t<p>Geplette jeneverbes <br>\n\t\t\t\t\t\t\t\t\t\tSchijfjes gember geplet</p>\n\t\t\t\t\t\t\t\t\t<h6>Mix in</h6>\n\t\t\t\t\t\t\t\t\t<p>Double Dutch Ginger Ale</p>\n\t\t\t\t\t\t\t\t\t<h5>Bereiding</h5>\n\t\t\t\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t\t\t\t<li>Neem een groot glas en vul met ijs</li>\n\t\t\t\t\t\t\t\t\t\t<li>Doe 5cl FLOWERSNGIN in het glas</li>\n\t\t\t\t\t\t\t\t\t\t<li>Voeg de botanicals toe</li>\n\t\t\t\t\t\t\t\t\t\t<li>Ruik en ervaar de aroma’s</li>\n\t\t\t\t\t\t\t\t\t\t<li>Overgiet met tonic</li>\n\t\t\t\t\t\t\t\t\t\t<li>Proef en geniet met mate</li>\n\t\t\t\t\t\t\t\t\t</ol>",
+      "text_fr": "<h6>Botanicals</h6>\n\t\t\t\t\t\t\t\t\t<p>Geplette jeneverbes <br>\n\t\t\t\t\t\t\t\t\t\tSchijfjes gember geplet</p>\n\t\t\t\t\t\t\t\t\t<h6>Mix in</h6>\n\t\t\t\t\t\t\t\t\t<p>Double Dutch Ginger Ale</p>\n\t\t\t\t\t\t\t\t\t<h5>Bereiding</h5>\n\t\t\t\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t\t\t\t<li>Neem een groot glas en vul met ijs</li>\n\t\t\t\t\t\t\t\t\t\t<li>Doe 5cl FLOWERSNGIN in het glas</li>\n\t\t\t\t\t\t\t\t\t\t<li>Voeg de botanicals toe</li>\n\t\t\t\t\t\t\t\t\t\t<li>Ruik en ervaar de aroma’s</li>\n\t\t\t\t\t\t\t\t\t\t<li>Overgiet met tonic</li>\n\t\t\t\t\t\t\t\t\t\t<li>Proef en geniet met mate</li>\n\t\t\t\t\t\t\t\t\t</ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 3,
+    "fields": {
+      "image": "photos/recipes/rozemarijn.png",
+      "season": 1,
+      "name_nl": "Rosemary",
+      "name_fr": "Rosemary",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>Lavendel <br>\n                                    Rozemarijn</p>\n                                <h6>Mix in</h6>\n                                <p>Double Dutch Elderflower Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>Lavendel <br>\n                                    Rozemarijn</p>\n                                <h6>Mix in</h6>\n                                <p>Double Dutch Elderflower Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 4,
+    "fields": {
+      "image": "photos/recipes/basilicum.png",
+      "season": 1,
+      "name_nl": "Basil Smash",
+      "name_fr": "Basil Smash",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>10 basilicum blaadjes <br>\n                                    1/2 citroen in stukjes <br>\n                                    2 cl suikersiroop of 1 tl rietsuiker <br>\n                                    2,5 cl citroensap of sap van 1/2</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Pomegranate & Basil</p>\n                                <h6>Gin</h6>\n                                <p>5cl FLOWERSNGIN Summer Edition</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>10 basilicum blaadjes <br>\n                                    1/2 citroen in stukjes <br>\n                                    2 cl suikersiroop of 1 tl rietsuiker <br>\n                                    2,5 cl citroensap of sap van 1/2</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Pomegranate & Basil</p>\n                                <h6>Gin</h6>\n                                <p>5cl FLOWERSNGIN Summer Edition</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 5,
+    "fields": {
+      "image": "photos/recipes/cranberry.png",
+      "season": 2,
+      "name_nl": "Lorem ipsum, dolor sit",
+      "name_fr": "Lorem ipsum, dolor sit",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>Geplette jeneverbes <br>\n                                    1/4 Citroengras <br>\n                                    Muntblaadje</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Indian Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>Geplette jeneverbes <br>\n                                    1/4 Citroengras <br>\n                                    Muntblaadje</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Indian Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 6,
+    "fields": {
+      "image": "photos/recipes/gember.png",
+      "season": 2,
+      "name_nl": "Ginger",
+      "name_fr": "Ginger",
+      "text_nl": "<h6>Botanicals</h6>\n\t\t\t\t\t\t\t\t\t<p>Geplette jeneverbes <br>\n\t\t\t\t\t\t\t\t\t\tSchijfjes gember geplet</p>\n\t\t\t\t\t\t\t\t\t<h6>Mix in</h6>\n\t\t\t\t\t\t\t\t\t<p>Double Dutch Ginger Ale</p>\n\t\t\t\t\t\t\t\t\t<h5>Bereiding</h5>\n\t\t\t\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t\t\t\t<li>Neem een groot glas en vul met ijs</li>\n\t\t\t\t\t\t\t\t\t\t<li>Doe 5cl FLOWERSNGIN in het glas</li>\n\t\t\t\t\t\t\t\t\t\t<li>Voeg de botanicals toe</li>\n\t\t\t\t\t\t\t\t\t\t<li>Ruik en ervaar de aroma’s</li>\n\t\t\t\t\t\t\t\t\t\t<li>Overgiet met tonic</li>\n\t\t\t\t\t\t\t\t\t\t<li>Proef en geniet met mate</li>\n\t\t\t\t\t\t\t\t\t</ol>",
+      "text_fr": "<h6>Botanicals</h6>\n\t\t\t\t\t\t\t\t\t<p>Geplette jeneverbes <br>\n\t\t\t\t\t\t\t\t\t\tSchijfjes gember geplet</p>\n\t\t\t\t\t\t\t\t\t<h6>Mix in</h6>\n\t\t\t\t\t\t\t\t\t<p>Double Dutch Ginger Ale</p>\n\t\t\t\t\t\t\t\t\t<h5>Bereiding</h5>\n\t\t\t\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t\t\t\t<li>Neem een groot glas en vul met ijs</li>\n\t\t\t\t\t\t\t\t\t\t<li>Doe 5cl FLOWERSNGIN in het glas</li>\n\t\t\t\t\t\t\t\t\t\t<li>Voeg de botanicals toe</li>\n\t\t\t\t\t\t\t\t\t\t<li>Ruik en ervaar de aroma’s</li>\n\t\t\t\t\t\t\t\t\t\t<li>Overgiet met tonic</li>\n\t\t\t\t\t\t\t\t\t\t<li>Proef en geniet met mate</li>\n\t\t\t\t\t\t\t\t\t</ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 7,
+    "fields": {
+      "image": "photos/recipes/rozemarijn.png",
+      "season": 2,
+      "name_nl": "Rosemary",
+      "name_fr": "Rosemary",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>Lavendel <br>\n                                    Rozemarijn</p>\n                                <h6>Mix in</h6>\n                                <p>Double Dutch Elderflower Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>Lavendel <br>\n                                    Rozemarijn</p>\n                                <h6>Mix in</h6>\n                                <p>Double Dutch Elderflower Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 8,
+    "fields": {
+      "image": "photos/recipes/basilicum.png",
+      "season": 2,
+      "name_nl": "Basil Smash",
+      "name_fr": "Basil Smash",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>10 basilicum blaadjes <br>\n                                    1/2 citroen in stukjes <br>\n                                    2 cl suikersiroop of 1 tl rietsuiker <br>\n                                    2,5 cl citroensap of sap van 1/2</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Pomegranate & Basil</p>\n                                <h6>Gin</h6>\n                                <p>5cl FLOWERSNGIN Summer Edition</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>10 basilicum blaadjes <br>\n                                    1/2 citroen in stukjes <br>\n                                    2 cl suikersiroop of 1 tl rietsuiker <br>\n                                    2,5 cl citroensap of sap van 1/2</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Pomegranate & Basil</p>\n                                <h6>Gin</h6>\n                                <p>5cl FLOWERSNGIN Summer Edition</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 9,
+    "fields": {
+      "image": "photos/recipes/cranberry.png",
+      "season": 3,
+      "name_nl": "Lorem ipsum, dolor sit",
+      "name_fr": "Lorem ipsum, dolor sit",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>Geplette jeneverbes <br>\n                                    1/4 Citroengras <br>\n                                    Muntblaadje</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Indian Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>Geplette jeneverbes <br>\n                                    1/4 Citroengras <br>\n                                    Muntblaadje</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Indian Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 10,
+    "fields": {
+      "image": "photos/recipes/gember.png",
+      "season": 3,
+      "name_nl": "Ginger",
+      "name_fr": "Ginger",
+      "text_nl": "<h6>Botanicals</h6>\n\t\t\t\t\t\t\t\t\t<p>Geplette jeneverbes <br>\n\t\t\t\t\t\t\t\t\t\tSchijfjes gember geplet</p>\n\t\t\t\t\t\t\t\t\t<h6>Mix in</h6>\n\t\t\t\t\t\t\t\t\t<p>Double Dutch Ginger Ale</p>\n\t\t\t\t\t\t\t\t\t<h5>Bereiding</h5>\n\t\t\t\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t\t\t\t<li>Neem een groot glas en vul met ijs</li>\n\t\t\t\t\t\t\t\t\t\t<li>Doe 5cl FLOWERSNGIN in het glas</li>\n\t\t\t\t\t\t\t\t\t\t<li>Voeg de botanicals toe</li>\n\t\t\t\t\t\t\t\t\t\t<li>Ruik en ervaar de aroma’s</li>\n\t\t\t\t\t\t\t\t\t\t<li>Overgiet met tonic</li>\n\t\t\t\t\t\t\t\t\t\t<li>Proef en geniet met mate</li>\n\t\t\t\t\t\t\t\t\t</ol>",
+      "text_fr": "<h6>Botanicals</h6>\n\t\t\t\t\t\t\t\t\t<p>Geplette jeneverbes <br>\n\t\t\t\t\t\t\t\t\t\tSchijfjes gember geplet</p>\n\t\t\t\t\t\t\t\t\t<h6>Mix in</h6>\n\t\t\t\t\t\t\t\t\t<p>Double Dutch Ginger Ale</p>\n\t\t\t\t\t\t\t\t\t<h5>Bereiding</h5>\n\t\t\t\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t\t\t\t<li>Neem een groot glas en vul met ijs</li>\n\t\t\t\t\t\t\t\t\t\t<li>Doe 5cl FLOWERSNGIN in het glas</li>\n\t\t\t\t\t\t\t\t\t\t<li>Voeg de botanicals toe</li>\n\t\t\t\t\t\t\t\t\t\t<li>Ruik en ervaar de aroma’s</li>\n\t\t\t\t\t\t\t\t\t\t<li>Overgiet met tonic</li>\n\t\t\t\t\t\t\t\t\t\t<li>Proef en geniet met mate</li>\n\t\t\t\t\t\t\t\t\t</ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 11,
+    "fields": {
+      "image": "photos/recipes/rozemarijn.png",
+      "season": 3,
+      "name_nl": "Rosemary",
+      "name_fr": "Rosemary",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>Lavendel <br>\n                                    Rozemarijn</p>\n                                <h6>Mix in</h6>\n                                <p>Double Dutch Elderflower Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>Lavendel <br>\n                                    Rozemarijn</p>\n                                <h6>Mix in</h6>\n                                <p>Double Dutch Elderflower Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 12,
+    "fields": {
+      "image": "photos/recipes/basilicum.png",
+      "season": 3,
+      "name_nl": "Basil Smash",
+      "name_fr": "Basil Smash",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>10 basilicum blaadjes <br>\n                                    1/2 citroen in stukjes <br>\n                                    2 cl suikersiroop of 1 tl rietsuiker <br>\n                                    2,5 cl citroensap of sap van 1/2</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Pomegranate & Basil</p>\n                                <h6>Gin</h6>\n                                <p>5cl FLOWERSNGIN Summer Edition</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>10 basilicum blaadjes <br>\n                                    1/2 citroen in stukjes <br>\n                                    2 cl suikersiroop of 1 tl rietsuiker <br>\n                                    2,5 cl citroensap of sap van 1/2</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Pomegranate & Basil</p>\n                                <h6>Gin</h6>\n                                <p>5cl FLOWERSNGIN Summer Edition</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 13,
+    "fields": {
+      "image": "photos/recipes/cranberry.png",
+      "season": 4,
+      "name_nl": "Lorem ipsum, dolor sit",
+      "name_fr": "Lorem ipsum, dolor sit",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>Geplette jeneverbes <br>\n                                    1/4 Citroengras <br>\n                                    Muntblaadje</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Indian Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>Geplette jeneverbes <br>\n                                    1/4 Citroengras <br>\n                                    Muntblaadje</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Indian Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 14,
+    "fields": {
+      "image": "photos/recipes/gember.png",
+      "season": 4,
+      "name_nl": "Ginger",
+      "name_fr": "Ginger",
+      "text_nl": "<h6>Botanicals</h6>\n\t\t\t\t\t\t\t\t\t<p>Geplette jeneverbes <br>\n\t\t\t\t\t\t\t\t\t\tSchijfjes gember geplet</p>\n\t\t\t\t\t\t\t\t\t<h6>Mix in</h6>\n\t\t\t\t\t\t\t\t\t<p>Double Dutch Ginger Ale</p>\n\t\t\t\t\t\t\t\t\t<h5>Bereiding</h5>\n\t\t\t\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t\t\t\t<li>Neem een groot glas en vul met ijs</li>\n\t\t\t\t\t\t\t\t\t\t<li>Doe 5cl FLOWERSNGIN in het glas</li>\n\t\t\t\t\t\t\t\t\t\t<li>Voeg de botanicals toe</li>\n\t\t\t\t\t\t\t\t\t\t<li>Ruik en ervaar de aroma’s</li>\n\t\t\t\t\t\t\t\t\t\t<li>Overgiet met tonic</li>\n\t\t\t\t\t\t\t\t\t\t<li>Proef en geniet met mate</li>\n\t\t\t\t\t\t\t\t\t</ol>",
+      "text_fr": "<h6>Botanicals</h6>\n\t\t\t\t\t\t\t\t\t<p>Geplette jeneverbes <br>\n\t\t\t\t\t\t\t\t\t\tSchijfjes gember geplet</p>\n\t\t\t\t\t\t\t\t\t<h6>Mix in</h6>\n\t\t\t\t\t\t\t\t\t<p>Double Dutch Ginger Ale</p>\n\t\t\t\t\t\t\t\t\t<h5>Bereiding</h5>\n\t\t\t\t\t\t\t\t\t<ol>\n\t\t\t\t\t\t\t\t\t\t<li>Neem een groot glas en vul met ijs</li>\n\t\t\t\t\t\t\t\t\t\t<li>Doe 5cl FLOWERSNGIN in het glas</li>\n\t\t\t\t\t\t\t\t\t\t<li>Voeg de botanicals toe</li>\n\t\t\t\t\t\t\t\t\t\t<li>Ruik en ervaar de aroma’s</li>\n\t\t\t\t\t\t\t\t\t\t<li>Overgiet met tonic</li>\n\t\t\t\t\t\t\t\t\t\t<li>Proef en geniet met mate</li>\n\t\t\t\t\t\t\t\t\t</ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 15,
+    "fields": {
+      "image": "photos/recipes/rozemarijn.png",
+      "season": 4,
+      "name_nl": "Rosemary",
+      "name_fr": "Rosemary",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>Lavendel <br>\n                                    Rozemarijn</p>\n                                <h6>Mix in</h6>\n                                <p>Double Dutch Elderflower Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>Lavendel <br>\n                                    Rozemarijn</p>\n                                <h6>Mix in</h6>\n                                <p>Double Dutch Elderflower Tonic</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  },
+  {
+    "model": "store.recipe",
+    "pk": 16,
+    "fields": {
+      "image": "photos/recipes/basilicum.png",
+      "season": 4,
+      "name_nl": "Basil Smash",
+      "name_fr": "Basil Smash",
+      "text_nl": "<h6>Botanicals</h6>\n                                <p>10 basilicum blaadjes <br>\n                                    1/2 citroen in stukjes <br>\n                                    2 cl suikersiroop of 1 tl rietsuiker <br>\n                                    2,5 cl citroensap of sap van 1/2</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Pomegranate & Basil</p>\n                                <h6>Gin</h6>\n                                <p>5cl FLOWERSNGIN Summer Edition</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>",
+      "text_fr": "<h6>Botanicals</h6>\n                                <p>10 basilicum blaadjes <br>\n                                    1/2 citroen in stukjes <br>\n                                    2 cl suikersiroop of 1 tl rietsuiker <br>\n                                    2,5 cl citroensap of sap van 1/2</p>\n                                <h6>Tonic</h6>\n                                <p>Double Dutch Pomegranate & Basil</p>\n                                <h6>Gin</h6>\n                                <p>5cl FLOWERSNGIN Summer Edition</p>\n                                <h5>Bereiding</h5>\n                                <ol>\n                                    <li>Neem een groot glas en vul met ijs</li>\n                                    <li>Doe 5cl FLOWERSNGIN in het glas</li>\n                                    <li>Voeg de botanicals toe</li>\n                                    <li>Ruik en ervaar de aroma’s</li>\n                                    <li>Overgiet met tonic</li>\n                                    <li>Proef en geniet met mate</li>\n                                </ol>"
+    }
+  }
+]

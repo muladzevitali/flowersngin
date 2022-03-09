@@ -1,0 +1,321 @@
+[
+  {
+    "model": "store.botanical",
+    "pk": 1,
+    "fields": {
+      "season": 1,
+      "name_nl": "jeneverbes",
+      "name_fr": "jeneverbes",
+      "image": "photos/botanicals/jeneverbes.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 2,
+    "fields": {
+      "season": 1,
+      "name_nl": "framboos",
+      "name_fr": "framboos",
+      "image": "photos/botanicals/framboos.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 3,
+    "fields": {
+      "season": 1,
+      "name_nl": "cranberry",
+      "name_fr": "cranberry",
+      "image": "photos/botanicals/cranberry.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 4,
+    "fields": {
+      "season": 1,
+      "name_nl": "tijm",
+      "name_fr": "tijm",
+      "image": "photos/botanicals/tijm.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 5,
+    "fields": {
+      "season": 1,
+      "name_nl": "rozemarijn",
+      "name_fr": "rozemarijn",
+      "image": "photos/botanicals/rozemarijn.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 6,
+    "fields": {
+      "season": 1,
+      "name_nl": "basilicum",
+      "name_fr": "basilicum",
+      "image": "photos/botanicals/basilicum.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 7,
+    "fields": {
+      "season": 1,
+      "name_nl": "pepermunt",
+      "name_fr": "pepermunt",
+      "image": "photos/botanicals/pepermunt.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 8,
+    "fields": {
+      "season": 1,
+      "name_nl": "limoen",
+      "name_fr": "limoen",
+      "image": "photos/botanicals/limoen.png"
+    }
+  },
+    {
+    "model": "store.botanical",
+    "pk": 9,
+    "fields": {
+      "season": 2,
+      "name_nl": "jeneverbes",
+      "name_fr": "jeneverbes",
+      "image": "photos/botanicals/jeneverbes.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 10,
+    "fields": {
+      "season": 2,
+      "name_nl": "framboos",
+      "name_fr": "framboos",
+      "image": "photos/botanicals/framboos.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk":11,
+    "fields": {
+      "season": 2,
+      "name_nl": "cranberry",
+      "name_fr": "cranberry",
+      "image": "photos/botanicals/cranberry.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 12,
+    "fields": {
+      "season": 2,
+      "name_nl": "tijm",
+      "name_fr": "tijm",
+      "image": "photos/botanicals/tijm.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 13,
+    "fields": {
+      "season": 2,
+      "name_nl": "rozemarijn",
+      "name_fr": "rozemarijn",
+      "image": "photos/botanicals/rozemarijn.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 14,
+    "fields": {
+      "season": 2,
+      "name_nl": "basilicum",
+      "name_fr": "basilicum",
+      "image": "photos/botanicals/basilicum.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 15,
+    "fields": {
+      "season": 2,
+      "name_nl": "pepermunt",
+      "name_fr": "pepermunt",
+      "image": "photos/botanicals/pepermunt.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 16,
+    "fields": {
+      "season": 2,
+      "name_nl": "limoen",
+      "name_fr": "limoen",
+      "image": "photos/botanicals/limoen.png"
+    }
+  },  {
+    "model": "store.botanical",
+    "pk": 17,
+    "fields": {
+      "season": 3,
+      "name_nl": "jeneverbes",
+      "name_fr": "jeneverbes",
+      "image": "photos/botanicals/jeneverbes.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 18,
+    "fields": {
+      "season": 3,
+      "name_nl": "framboos",
+      "name_fr": "framboos",
+      "image": "photos/botanicals/framboos.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 19,
+    "fields": {
+      "season": 3,
+      "name_nl": "cranberry",
+      "name_fr": "cranberry",
+      "image": "photos/botanicals/cranberry.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 20,
+    "fields": {
+      "season": 3,
+      "name_nl": "tijm",
+      "name_fr": "tijm",
+      "image": "photos/botanicals/tijm.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 21,
+    "fields": {
+      "season": 3,
+      "name_nl": "rozemarijn",
+      "name_fr": "rozemarijn",
+      "image": "photos/botanicals/rozemarijn.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 22,
+    "fields": {
+      "season": 3,
+      "name_nl": "basilicum",
+      "name_fr": "basilicum",
+      "image": "photos/botanicals/basilicum.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 23,
+    "fields": {
+      "season": 3,
+      "name_nl": "pepermunt",
+      "name_fr": "pepermunt",
+      "image": "photos/botanicals/pepermunt.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 24,
+    "fields": {
+      "season": 3,
+      "name_nl": "limoen",
+      "name_fr": "limoen",
+      "image": "photos/botanicals/limoen.png"
+    }
+  },
+    {
+    "model": "store.botanical",
+    "pk": 25,
+    "fields": {
+      "season": 4,
+      "name_nl": "jeneverbes",
+      "name_fr": "jeneverbes",
+      "image": "photos/botanicals/jeneverbes.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 26,
+    "fields": {
+      "season": 4,
+      "name_nl": "framboos",
+      "name_fr": "framboos",
+      "image": "photos/botanicals/framboos.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 27,
+    "fields": {
+      "season": 4,
+      "name_nl": "cranberry",
+      "name_fr": "cranberry",
+      "image": "photos/botanicals/cranberry.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 28,
+    "fields": {
+      "season": 4,
+      "name_nl": "tijm",
+      "name_fr": "tijm",
+      "image": "photos/botanicals/tijm.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 29,
+    "fields": {
+      "season": 4,
+      "name_nl": "rozemarijn",
+      "name_fr": "rozemarijn",
+      "image": "photos/botanicals/rozemarijn.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 30,
+    "fields": {
+      "season": 4,
+      "name_nl": "basilicum",
+      "name_fr": "basilicum",
+      "image": "photos/botanicals/basilicum.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 31,
+    "fields": {
+      "season": 4,
+      "name_nl": "pepermunt",
+      "name_fr": "pepermunt",
+      "image": "photos/botanicals/pepermunt.png"
+    }
+  },
+  {
+    "model": "store.botanical",
+    "pk": 32,
+    "fields": {
+      "season": 4,
+      "name_nl": "limoen",
+      "name_fr": "limoen",
+      "image": "photos/botanicals/limoen.png"
+    }
+  }
+]

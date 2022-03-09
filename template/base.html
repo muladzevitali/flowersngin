@@ -1,0 +1,126 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE HTML>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% translate 'Home' %}</title>
+    {% include 'includes/header.html' %}
+</head>
+
+<body>
+<div class="wrapper home-page">
+
+    <div class="showcase js-showcase">
+        <img src="/static/images/showcase-img.jpg" alt="">
+    </div>
+
+
+    <header id="header-menu">
+        {% include 'includes/header-menu.html' %}
+    </header>
+
+    <main>
+
+        <section id="het-verhaal" class="history content-element --full-grid">
+            <div class="ce__img">
+                <img src="/static/images/history-img.jpg" alt="">
+            </div>
+            <div class="ce__content">
+                <h2>{% translate '20 jaar Natuurlijk Bloembinders, tijd voor een eigen gin' %}</h2>
+                <div class="desc --content">
+                    <p>{% translate "Bij Natuurlijk Bloembinders werken we al 20 jaar met het mooiste wat de natuur biedt! Bloemen, planten, kruiden en groen gaan elke dag door onze handen, we creëren er de prachtigste boeketten en florale arrangementen mee." %}</p>
+                    <p>{% translate 'Naast onze hartstocht voor het florale werk, sluimerde er nog een andere passie, namelijk die voor gin. Die passie wortelde verder tijdens de opendeurdagen van Natuurlijk en op evenementen zoals Wezel Culinair. We serveerden er premium gins met een eigengemaakte selectie van botanicals, diepgevroren in ijs, ter plekke losgehakt en geserveerd.' %}</p>
+                    <p>{% translate '20 jaar Natuurlijk Bloembinders vieren we in gepaste stijl en hoe kan dat beter dan met de lancering van onze eigen gin? FLOWERSNGIN bevat 20 botanicals die we in de loop van de jaren zorgvuldig selecteerden en waarvan we zelf veel houden.' %}</p>
+                </div>
+                <a href="{% url 'store-index' %}" class="btn --black">{% translate 'Shop the bottle' %}</a>
+            </div>
+        </section>
+
+        <section class="botanicals">
+            {% include 'includes/botanicals.html' %}
+        </section>
+
+        <section id="reviews" class="reviews">
+            {% include 'includes/reviews.html' %}
+        </section>
+
+        <section id="recepten" class="recepten">
+            {% include 'includes/recipes.html' %}
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-form">
+                    <div class="section-title --center">
+                        <h2>{% translate 'Vragen, opmerkingen,' %} <br>{% translate 'een lekker recept delen?' %}</h2>
+                    </div>
+                    <form action="{% url 'index' %}" method="post">
+                        {% csrf_token %}
+                        <div class="form-row">
+
+                            <div class="col col-2">
+                                <input type="text" name="first_name" placeholder="{% translate 'Voornaam' %}*" required=""
+                                       id="c-first-name">
+                                <label for="c-first-name">{% translate 'Voornaam' %}*</label>
+                            </div>
+
+                            <div class="col col-2">
+                                <input type="text" name="last_name" placeholder="{% translate 'Achternaam' %}*" required=""
+                                       id="c-last-name">
+                                <label for="c-last-name">{% translate 'Achternaam' %}*</label>
+                            </div>
+
+                            <div class="col col-2">
+                                <input type="tel" name="phone" placeholder="{% translate 'Telefoonnummer' %}" id="c-tel">
+                                <label for="c-tel">{% translate 'Telefoonnummer' %}</label>
+                            </div>
+
+                            <div class="col col-2">
+                                <input type="email" name="email" placeholder="{% translate 'E-mailadres' %}*"
+                                       required="" id="c-email">
+                                <label for="c-email">{% translate 'E-mailadres' %}*</label>
+                            </div>
+
+                            <div class="col col-1">
+                                <select name="subject" id="c-subject" required>
+                                    {% for option, value in form.fields.subject.choices %}
+                                        <option value="{{ option }}">{% translate option%}</option>
+                                    {% endfor %}
+                                </select>
+                                <label for="c-subject">{% translate 'Onderwerp' %}*</label>
+                            </div>
+
+                            <div class="col col-1">
+                                <textarea name="text" placeholder="{% translate 'Vraag' %} / {% translate 'opmerking' %}*" required=""
+                                          id="c-message"></textarea>
+                                <label for="c-message">{% translate 'Vraag' %} / {% translate 'opmerking' %}*</label>
+                            </div>
+
+                            <div class="col col-1 privacy-col">
+                                <input type="checkbox" name="privacy" id="c-privacy" value="" required="">
+                                <label for="c-privacy">{% translate 'Ik ga akkoord met de' %} <a href="#">Privacy policy</a>.</label>
+                            </div>
+
+                            <div class="col col-1 submit-col">
+                                <button type="submit" class="btn --black">{% translate 'VERSTUUR BERICHT' %}</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer-page">
+        {% include 'includes/footer.html' %}
+    </footer>
+
+</div>
+</body>
+</html>

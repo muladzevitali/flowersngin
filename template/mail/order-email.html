@@ -1,0 +1,205 @@
+{% load static %}
+{% load i18n %}
+{% load settings_value %}
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>{% translate 'Bedankt voor je bestelling' %} {{ order.order_number }}</title>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0"
+      style="-webkit-text-size-adjust: none;margin: 0;padding: 0;width: 100% !important;color: #000000;background-color: #FFFFFF;">
+<center>
+    <table bgcolor="#F5F5F5" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" valign="top"
+                style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+                <table bgcolor="#F5F5F5" width="600" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="20" bgcolor="#FFFFFF" align="center" valign="top"
+                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+
+                        </td>
+                        <td width="20" align="center" valign="top"
+                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+                            <table bgcolor="#FFFFFF" width="560" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="center" valign="top"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;color:#000000;font-size: 14px;line-height: 22px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 0;margin: 0;">
+                                        &nbsp;<br>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+                                        <a href="{% url 'index' %}" target="_blank" name="Ga naar www.flowersngin.com">
+                                            <img src="{{ request.scheme }}://
+                                                    {{ request.META.HTTP_HOST }}{% static 'images/logo.png' %}"
+                                                 width="90" height="90"
+                                                 alt="Flowersngin">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" valign="top"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;color:#000000;font-size: 14px;line-height: 22px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 0;margin: 0;">
+                                        &nbsp;<br>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;color:#000000;font-size: 14px;line-height: 22px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 0;margin: 0;">
+                                        {% translate 'Beste' %} {{ order.client_full_name }} <br>
+                                        <br>
+                                        {% translate 'Bedankt voor je bestelling met bestelnummer' %}
+                                        <em>{{ order.order_number }}</em>.<br>
+                                        <br>
+                                        <strong>{% translate 'Facturatiegegevens' %}</strong>
+                                        <br>
+                                        {% if order.company_name %}
+                                            {{ order.company_name }}<br>
+                                        {% endif %}
+                                        {% if order.btw_number %}
+                                            {{ order.btw_number }}<br>
+                                        {% endif %}
+                                        {{ order.client_full_name }}<br>
+                                        {% if order.client_phone %}
+                                            {{ order.client_phone }}<br>
+                                        {% endif %}
+                                        {% if order.client_email %}
+                                            {{ order.client_email }}<br>
+                                        {% endif %}
+                                        {{ oorder.client_street_name }} {{ order.client_house_number }}
+                                        {% if order.client_bus %}/
+                                            {{ order.client_bus }} {% endif %}<br>
+                                        {{ order.client_postalcode }} {{ order.client_city }}<br>
+                                        {{ order.client_country }}<br>
+                                        <br>
+                                        <br>
+                                        {% if order.pick_up_from_store %}
+                                            <strong>{% translate 'Je ontvangt een e-mail wanneer je bestelling afgehaald kan worden in onze winkel.' %}</strong>
+                                            <br>
+                                        {% endif %}
+                                        {% if order.different_deliver_address %}
+                                            <strong>{% translate 'Verzendadres' %}</strong><br>
+                                            {{ order.receiver_first_name|default_if_none:order.client_first_name }}
+                                            {{ order.receiver_last_name|default_if_none:order.client_last_name }}<br>
+                                            {{ order.receiver_street_name|default_if_none:order.client_street_name }}
+                                            {{ order.receiver_house_number|default_if_none:order.client_house_number }}
+                                            {% if order.receiver_bus or order.client_bus %}/
+                                                {{ order.receiver_bus|default_if_none:order.client_bus }}{% endif %}<br>
+                                            {{ order.receiver_postalcode|default_if_none:order.client_postalcode }}
+                                            {{ order.receiver_city|default_if_none:order.client_city }}<br>
+                                            {{ order.receiver_country|default_if_none:order.client_country }}<br>
+                                            <br>
+                                            <br>
+                                        {% endif %}
+                                        <table bgcolor="#FFFFFF" width="560" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="260" align="left" valign="top"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                    <strong>{% translate 'Artikel' %}</strong>
+                                                </td>
+                                                <td width="100" align="right" valign="top"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                    <strong>{% translate 'Eenheidsprijs' %}</strong>
+                                                </td>
+                                                <td width="100" align="right" valign="top"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                    <strong>{% translate 'Aantal' %}</strong>
+                                                </td>
+                                                <td width="100" align="right" valign="top"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                    <strong>{% translate 'Prijs' %}</strong>
+                                                </td>
+                                            </tr>
+                                            {% for order_product in order_products %}
+                                                <tr>
+                                                    <td width="260" align="left" valign="top"
+                                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                        {{ order_product.product.name }}
+                                                    </td>
+                                                    <td width="100" align="right" valign="top"
+                                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                        &euro; {{ order_product.product_price|floatformat:2 }}
+                                                    </td>
+                                                    <td width="100" align="right" valign="top"
+                                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                        {{ order_product.quantity }}
+                                                    </td>
+                                                    <td width="100" align="right" valign="top"
+                                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                        &euro; {{ order_product.total }}
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                        </table>
+                                        <br>
+                                        <table bgcolor="#FFFFFF" width="200" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td width="100" align="left" valign="top"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                    <strong>{% translate 'Subtotaal' %}</strong>
+                                                </td>
+                                                <td width="100" align="right" valign="top"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                    &euro; {{ total|floatformat:2 }}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="100" align="left" valign="top"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                    <strong>{% translate 'Verzendkosten' %}</strong>
+                                                </td>
+                                                <td width="100" align="right" valign="top"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                    &euro; {% settings_value 'SHIPPING_TO_BELGIUM' %}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="100" align="left" valign="top"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                    <strong>{% translate 'Totaal' %}<br>
+                                                        <small>({% translate 'incl. 21% BTW' %})</small></strong>
+                                                </td>
+                                                <td width="100" align="right" valign="top"
+                                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important; border: solid 1px #000000;color:#000000;font-size: 12px;line-height: 16px;font-family: Arial;font-style: normal;font-variant: normal;font-weight: 400;padding: 5px;margin: 0;">
+                                                    &euro; {{ grand_total|floatformat:2 }}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <br>
+                                        {% translate 'Met vriendelijke groeten' %}, <br>
+                                        <br>
+                                        {% translate 'Het Flowersngin Team' %}
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="20" align="center" valign="top"
+                                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="20" bgcolor="#FFFFFF" align="center" valign="top"
+                            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse !important;">
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+</center>
+
+</body>
+</html>
