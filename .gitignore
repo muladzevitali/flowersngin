@@ -1,0 +1,6 @@
+*__pycache__/
+.idea/
+media/photos/*
+config/static/
+flowersngin-layout-main/
+db.sqlite3
