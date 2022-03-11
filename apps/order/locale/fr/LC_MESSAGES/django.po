@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-09 21:32+0400\n"
+"POT-Creation-Date: 2022-03-11 13:59+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
 #: .\apps\order\models.py:13
 msgid "Country"
 msgstr ""
@@ -25,22 +26,58 @@ msgstr ""
 msgid "Countries"
 msgstr ""
 
-#: .\apps\order\models.py:61
+#: .\apps\order\models.py:22
+msgid "open"
+msgstr ""
+
+#: .\apps\order\models.py:23
+msgid "failed"
+msgstr ""
+
+#: .\apps\order\models.py:24
+msgid "pending"
+msgstr ""
+
+#: .\apps\order\models.py:25
+msgid "paid"
+msgstr ""
+
+#: .\apps\order\models.py:55
+msgid "new"
+msgstr ""
+
+#: .\apps\order\models.py:56
+msgid "accepted"
+msgstr ""
+
+#: .\apps\order\models.py:57
+msgid "completed"
+msgstr ""
+
+#: .\apps\order\models.py:58
+msgid "canceled"
+msgstr ""
+
+#: .\apps\order\models.py:93
 msgid "Order"
 msgstr ""
 
-#: .\apps\order\models.py:62
+#: .\apps\order\models.py:94
 msgid "Orders"
 msgstr ""
 
-#: .\apps\order\models.py:101
+#: .\apps\order\models.py:123
+msgid "Pick up from store"
+msgstr ""
+
+#: .\apps\order\models.py:150
 msgid "Order product"
 msgstr ""
 
-#: .\apps\order\models.py:102
+#: .\apps\order\models.py:151
 msgid "Order products"
 msgstr ""
 
-#: .\apps\order\utils.py:29
+#: .\apps\order\utils.py:34
 msgid "Order for "
 msgstr ""

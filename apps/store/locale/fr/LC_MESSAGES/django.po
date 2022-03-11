@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-09 21:32+0400\n"
+"POT-Creation-Date: 2022-03-11 13:59+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,34 +46,34 @@ msgstr ""
 msgid "published"
 msgstr ""
 
-#: .\apps\store\models.py:34
+#: .\apps\store\models.py:35
 msgid "Product"
 msgstr ""
 
-#: .\apps\store\models.py:35
+#: .\apps\store\models.py:36
 msgid "Products"
 msgstr ""
 
-#: .\apps\store\models.py:63
+#: .\apps\store\models.py:65
 msgid "Review"
 msgstr ""
 
-#: .\apps\store\models.py:64
+#: .\apps\store\models.py:66
 msgid "Reviews"
 msgstr ""
 
-#: .\apps\store\models.py:77
+#: .\apps\store\models.py:79
 msgid "Recipe"
 msgstr ""
 
-#: .\apps\store\models.py:78
+#: .\apps\store\models.py:80
 msgid "Recipes"
 msgstr ""
 
-#: .\apps\store\models.py:90
+#: .\apps\store\models.py:92
 msgid "Botanical"
 msgstr ""
 
-#: .\apps\store\models.py:91
+#: .\apps\store\models.py:93
 msgid "Botanicals"
 msgstr ""
