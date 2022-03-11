@@ -5,9 +5,9 @@ from random import sample
 
 class StoreListView(ListView):
     template_name = 'store.html'
-    queryset = models.Product.objects.all()
+    queryset = models.Product.objects.all().order_by('order_id')
     paginate_by = 100
-    ordering = ('id', )
+    ordering = ('order_id',)
 
     def get_queryset(self):
         return self.queryset.filter(is_published=True)

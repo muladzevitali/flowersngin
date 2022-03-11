@@ -29,10 +29,12 @@ class Product(TimeStampedModel):
     image = models.ImageField(upload_to='photos/products', null=True, blank=True)
     stock = models.IntegerField(verbose_name=_('stock'))
     is_published = models.BooleanField(default=True, verbose_name=_('published'))
+    order_id = models.PositiveIntegerField(default=0, blank=False, null=False)
 
     class Meta:
         verbose_name = _('Product')
         verbose_name_plural = _('Products')
+        ordering = ('order_id',)
 
     def __str__(self):
         return self.name

@@ -3,6 +3,7 @@ from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
 
 from apps.store import models
+from adminsortable2.admin import SortableAdminMixin
 
 
 class ProductAdminForm(forms.ModelForm):
@@ -11,10 +12,10 @@ class ProductAdminForm(forms.ModelForm):
         fields = '__all__'
 
 
-class ProductAdmin(TranslationAdmin):
+class ProductAdmin(SortableAdminMixin, TranslationAdmin):
     form = ProductAdminForm
     prepopulated_fields = {'slug': ("name_nl",)}
-    list_display = ('pk', 'name', 'is_published', 'stock')
+    list_display = ('pk', 'order_id', 'name', 'is_published', 'stock')
     list_editable = ('is_published',)
 
 
