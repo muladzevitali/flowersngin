@@ -17,13 +17,45 @@ class Country(TimeStampedModel):
         return self.name
 
 
+class Payment(TimeStampedModel):
+    class PaymentStatusChoices(models.TextChoices):
+        OPEN = _('open')
+        FAILED = _('failed')
+        PENDING = _('pending')
+        PAID = _('paid')
+
+    payment_id = models.CharField(max_length=100)
+    payment_method = models.CharField(max_length=100, default='mollie')
+    description = models.CharField(max_length=255, null=True, blank=True)
+    checkout_url = models.URLField(null=True, blank=True)
+    amount_paid = models.CharField(max_length=20)
+    ccy = models.CharField(max_length=10)
+    status = models.CharField(max_length=100, choices=PaymentStatusChoices.choices)
+    order = models.ForeignKey('order.Order', on_delete=models.CASCADE, related_name='order_payments')
+
+    @classmethod
+    def from_meta(cls, meta, order):
+        payment = cls()
+        payment.payment_id = meta.id
+        payment.description = meta.description
+        payment.checkout_url = meta.checkout_url
+        payment.status = meta.status
+        payment.amount = meta.amount["value"]
+        payment.ccy = meta.amount['currency']
+        payment.order = order
+        payment.save()
+        return payment
+
+    def __str__(self):
+        return f'{self.payment_id}'
+
+
 class Order(TimeStampedModel):
-    STATUS_CHOICES = (
-        ('New', 'New'),
-        ('Accepted', 'Accepted'),
-        ('Completed', 'Completed'),
-        ('Canceled', 'Canceled')
-    )
+    class OrderStatusChoices(models.TextChoices):
+        NEW = _('new')
+        ACCEPTED = _('accepted')
+        COMPLETED = _('completed')
+        CANCELED = _('canceled')
 
     order_number = models.CharField(max_length=20)
     company_name = models.CharField(max_length=100, null=True, blank=True)
@@ -53,7 +85,7 @@ class Order(TimeStampedModel):
     order_note = models.TextField(null=True, blank=True)
     order_total = models.DecimalField(max_digits=8, decimal_places=2)
     tax = models.DecimalField(max_digits=8, decimal_places=2)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='New')
+    status = models.CharField(max_length=10, choices=OrderStatusChoices.choices, default=OrderStatusChoices.NEW)
     ip = models.CharField(max_length=20, blank=True)
     is_ordered = models.BooleanField(default=False)
 
@@ -71,11 +103,28 @@ class Order(TimeStampedModel):
 
     @property
     def client_full_address(self):
-        return f'{self.client_street_name} {self.client_house_number} {self.client_bus}'
+        address = f'{self.client_street_name} {self.client_house_number}'
+        if self.client_bus:
+            address += f' / {self.client_bus}'
+        address += f', {self.client_country.name}, {self.client_postalcode}'
+        return address
 
     @property
     def receiver_full_address(self):
-        return f'{self.receiver_street_name} {self.receiver_house_number} {self.receiver_bus}'
+        address = f'{self.receiver_street_name} {self.receiver_house_number}'
+        if self.receiver_bus:
+            address += f' / {self.receiver_bus}'
+        address += f', {self.receiver_country.name}, {self.receiver_postalcode}'
+        return address
+
+    @property
+    def order_address(self):
+        if self.pick_up_from_store:
+            return _('Pick up from store')
+        elif self.different_deliver_address:
+            return self.receiver_full_address
+        else:
+            return self.client_full_address
 
     def __str__(self):
         return f'Order({self.id}) - {self.order_number}'

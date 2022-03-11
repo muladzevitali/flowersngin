@@ -1,8 +1,8 @@
 from django.contrib import messages
-from django.shortcuts import redirect, render
+from django.shortcuts import (redirect, render, reverse, get_object_or_404)
 
 from apps.cart.views import get_cart_info
-from apps.order import (utils, forms)
+from apps.order import (utils, forms, helpers, models)
 
 
 def place_order(request):
@@ -24,12 +24,30 @@ def place_order(request):
         order.tax = cart_info['tax']
         order.ip = request.META.get('REMOTE_ADDR')
         order.save()
-        utils.finalize_order(order, cart_info['cart_items'])
-        utils.notify_on_completion(request, order, cart_info)
-        cart_info['cart_items'].delete()
+        with helpers.MollieClient() as client:
+            payment_meta = client.create_payment(request, order)
 
-        context = dict(order=order)
-        return render(request, 'cart-3.html', context=context)
+        _ = models.Payment.from_meta(payment_meta, order)
+
+        return redirect(payment_meta.checkout_url)
 
     context = dict(form=form, **cart_info)
     return render(request, 'cart-2.html', context=context)
+
+
+def post_payment(request, order_number):
+    order = get_object_or_404(models.Order, order_number=order_number)
+    payment = order.order_payments.first()
+    with helpers.MollieClient() as client:
+        status = client.get_payment_status(payment.payment_id)
+
+    if not status == 'paid':
+        return redirect(reverse('order-index'))
+
+    cart_info = get_cart_info(request)
+    utils.finalize_order(order, payment, cart_info['cart_items'])
+    utils.notify_on_completion(request, order, cart_info)
+    cart_info['cart_items'].delete()
+
+    context = dict(order=order)
+    return render(request, 'cart-3.html', context=context)
