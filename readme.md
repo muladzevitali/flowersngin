@@ -9,4 +9,6 @@ python manage.py migrage
 python manage.py init_defaults
 # For product ordering initializing
 python manage.py reorder store.Product
+# Compile translations
+django-admin compilemessages
 ```
