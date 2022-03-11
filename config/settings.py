@@ -15,6 +15,8 @@ from pathlib import Path
 
 from django.utils.translation import gettext_lazy as _
 
+from config.env import env
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,12 +27,12 @@ CONTEXT.prec = 3
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-x4=&psfonris_1pgi(!tr5k1&)(jn+-tws#@kp+=exab_#=74s'
+SECRET_KEY = env('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DJANGO_DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS')
 
 # Application definition
 
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ckeditor',
     'admin_honeypot',
+    'adminsortable2',
     'apps.store',
     'apps.user',
     'apps.cart',
@@ -155,12 +158,13 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'django.email.vm@gmail.com'
-EMAIL_HOST_PASSWORD = 'Chanchura1'
-EMAIL_USE_TLS = True
-EMAIL_CONTACT_FORM_RECEIVER = 'muladzevitali@gmail.com'
+EMAIL_HOST = env('EMAIL_HOST')
+EMAIL_PORT = env.int('EMAIL_PORT')
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = env.bool('EMAIL_USE_TLS')
+EMAIL_CONTACT_FORM_RECEIVER = env('EMAIL_CONTACT_FORM_RECEIVER')
 
-TAX = round(decimal.Decimal(0.00, CONTEXT), 2)
-SHIPPING_TO_BELGIUM = round(decimal.Decimal(5.95, CONTEXT), 2)
+TAX = round(decimal.Decimal(env.float('TAX'), CONTEXT), 2)
+SHIPPING_TO_BELGIUM = round(decimal.Decimal(env.float('SHIPPING_TO_BELGIUM'), CONTEXT), 2)
+MOLLIE_CLIENT_API = env('MOLLIE_CLIENT_API')

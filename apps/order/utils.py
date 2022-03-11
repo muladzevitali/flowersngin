@@ -5,7 +5,7 @@ from django.utils.translation import gettext as _
 from apps.order import models
 
 
-def finalize_order(order, cart_items):
+def finalize_order(order, payment, cart_items):
     for cart_item in cart_items:
         order_product = models.OrderProduct(order=order, product=cart_item.product)
 
@@ -18,6 +18,11 @@ def finalize_order(order, cart_items):
         product = cart_item.product
         product.stock -= cart_item.quantity
         product.save()
+
+    payment.status = payment.PaymentStatusChoices.PAID
+    payment.save()
+    order.status = order.OrderStatusChoices.ACCEPTED
+    order.save()
 
 
 def clear_cart(cart_items):

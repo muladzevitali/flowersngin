@@ -5,3 +5,4 @@ flowersngin-layout-main/
 db.sqlite3
 static/*
 **django.mo
+.env
