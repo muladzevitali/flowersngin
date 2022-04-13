@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        node {
-            label 'my_local_server'
-            customWorkspace '/projects/'
-        }
+    agent {docker { image 'python:3.7.2' }
     }
     stages {
         stage('Checkout project') {
